@@ -59,7 +59,7 @@ def simplify_clusters(X, y):
     return new_X, new_y
 
 
-dataset = 'SVHN'  # options are [MNIST, CIFAR, SVHN]
+dataset = 'CIFAR'  # options are [MNIST, CIFAR, SVHN]
 results_path = './results_' + dataset + '/'
 X = []
 y = []
