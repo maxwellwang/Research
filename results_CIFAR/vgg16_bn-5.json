@@ -1,0 +1,134 @@
+{
+    "model": "vgg16_bn-5",
+    "function params": {
+        "cfg": "D",
+        "batch norm": true
+    },
+    "train accuracy": 99.056,
+    "test accuracy": 90.67,
+    "accuracy difference": 8.385999999999996,
+    "num epochs": 94,
+    "num layers": 37,
+    "num params": 122505802,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "ReLU-6": {},
+    "MaxPool2d-7": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "Conv2d-8": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-9": {},
+    "ReLU-10": {},
+    "Conv2d-11": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-12": {},
+    "ReLU-13": {},
+    "MaxPool2d-14": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "Conv2d-15": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-16": {},
+    "ReLU-17": {},
+    "Conv2d-18": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-19": {},
+    "ReLU-20": {},
+    "Conv2d-21": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-22": {},
+    "ReLU-23": {},
+    "MaxPool2d-24": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "Conv2d-25": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-26": {},
+    "ReLU-27": {},
+    "MaxPool2d-28": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-29": {},
+    "Linear-30": {},
+    "ReLU-31": {},
+    "Dropout-32": {},
+    "Linear-33": {},
+    "ReLU-34": {},
+    "Dropout-35": {},
+    "Linear-36": {},
+    "VGG-37": {}
+}

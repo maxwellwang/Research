@@ -1,0 +1,49 @@
+{
+    "model": "shufflenet_v2_x0_5-1M",
+    "function params": {
+        "stages repeats": [
+            4,
+            8,
+            4
+        ],
+        "stages out channels": [
+            24,
+            48,
+            96,
+            192,
+            1024
+        ]
+    },
+    "train accuracy": 57.304,
+    "test accuracy": 55.68,
+    "accuracy difference": 1.6240000000000023,
+    "num epochs": 100,
+    "num layers": 8,
+    "num params": 37570,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "ReLU-6": {},
+    "Linear-7": {},
+    "ShuffleNetV2-8": {}
+}

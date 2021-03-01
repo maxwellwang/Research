@@ -1,0 +1,82 @@
+{
+    "model": "inception_v3-9",
+    "function params": {},
+    "train accuracy": 80.25,
+    "test accuracy": 80.72,
+    "accuracy difference": -0.46999999999999886,
+    "num epochs": 100,
+    "num layers": 21,
+    "num params": 375530,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "BasicConv2d-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "BasicConv2d-6": {},
+    "Conv2d-7": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-8": {},
+    "BasicConv2d-9": {},
+    "MaxPool2d-10": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-11": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-12": {},
+    "BasicConv2d-13": {},
+    "Conv2d-14": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-15": {},
+    "BasicConv2d-16": {},
+    "MaxPool2d-17": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-18": {},
+    "Dropout-19": {},
+    "Linear-20": {},
+    "Inception3-21": {}
+}

@@ -1,0 +1,35 @@
+{
+    "model": "resnet152-1M",
+    "function params": {
+        "block": "Bottleneck",
+        "layers": [
+            3,
+            8,
+            36,
+            3
+        ],
+        "groups": 1,
+        "width per group": 64
+    },
+    "train accuracy": 94.895,
+    "test accuracy": 95.08,
+    "accuracy difference": -0.18500000000000227,
+    "num epochs": 100,
+    "num layers": 6,
+    "num params": 3914,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "AdaptiveAvgPool2d-4": {},
+    "Linear-5": {},
+    "ResNet-6": {}
+}

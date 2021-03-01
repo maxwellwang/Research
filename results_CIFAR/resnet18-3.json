@@ -1,0 +1,93 @@
+{
+    "model": "resnet18-3",
+    "function params": {
+        "block": "BasicBlock",
+        "layers": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "groups": 1,
+        "width per group": 64
+    },
+    "train accuracy": 90.108,
+    "test accuracy": 81.64,
+    "accuracy difference": 8.468000000000004,
+    "num epochs": 100,
+    "num layers": 21,
+    "num params": 158154,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-5": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-6": {},
+    "ReLU-7": {},
+    "Conv2d-8": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-9": {},
+    "ReLU-10": {},
+    "BasicBlock-11": {
+        "stride": 1
+    },
+    "Conv2d-12": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-13": {},
+    "ReLU-14": {},
+    "Conv2d-15": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-16": {},
+    "ReLU-17": {},
+    "BasicBlock-18": {
+        "stride": 1
+    },
+    "AdaptiveAvgPool2d-19": {},
+    "Linear-20": {},
+    "ResNet-21": {}
+}

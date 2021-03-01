@@ -1,0 +1,30 @@
+{
+    "model": "inception_v3-1M",
+    "function params": {},
+    "train accuracy": 43.228,
+    "test accuracy": 61.24,
+    "accuracy difference": -18.012,
+    "num epochs": 100,
+    "num layers": 8,
+    "num params": 682,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "BasicConv2d-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-5": {},
+    "Dropout-6": {},
+    "Linear-7": {},
+    "Inception3-8": {}
+}

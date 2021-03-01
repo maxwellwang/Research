@@ -1,0 +1,45 @@
+{
+    "model": "alexnet-3",
+    "function params": {},
+    "train accuracy": 99.045,
+    "test accuracy": 97.91,
+    "accuracy difference": 1.1350000000000051,
+    "num epochs": 13,
+    "num layers": 14,
+    "num params": 45453130,
+    "Conv2d-1": {
+        "kernel size": [
+            11,
+            11
+        ],
+        "stride": [
+            4,
+            4
+        ]
+    },
+    "ReLU-2": {},
+    "MaxPool2d-3": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-4": {
+        "kernel size": [
+            5,
+            5
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-5": {},
+    "AdaptiveAvgPool2d-6": {},
+    "Dropout-7": {},
+    "Linear-8": {},
+    "ReLU-9": {},
+    "Dropout-10": {},
+    "Linear-11": {},
+    "ReLU-12": {},
+    "Linear-13": {},
+    "AlexNet-14": {}
+}

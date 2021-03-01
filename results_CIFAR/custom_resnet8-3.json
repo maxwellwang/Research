@@ -1,0 +1,128 @@
+{
+    "model": "custom_resnet8-3",
+    "function params": {
+        "block": "Bottleneck",
+        "layers": [
+            2,
+            8,
+            2,
+            2
+        ],
+        "groups": 1,
+        "width per group": 8
+    },
+    "train accuracy": 79.728,
+    "test accuracy": 76.97,
+    "accuracy difference": 2.7579999999999956,
+    "num epochs": 100,
+    "num layers": 29,
+    "num params": 37898,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-5": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-6": {},
+    "ReLU-7": {},
+    "Conv2d-8": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-9": {},
+    "ReLU-10": {},
+    "Conv2d-11": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-12": {},
+    "Conv2d-13": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-14": {},
+    "ReLU-15": {},
+    "Bottleneck-16": {
+        "stride": 1
+    },
+    "Conv2d-17": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-18": {},
+    "ReLU-19": {},
+    "Conv2d-20": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-21": {},
+    "ReLU-22": {},
+    "Conv2d-23": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-24": {},
+    "ReLU-25": {},
+    "Bottleneck-26": {
+        "stride": 1
+    },
+    "AdaptiveAvgPool2d-27": {},
+    "Linear-28": {},
+    "ResNet-29": {}
+}

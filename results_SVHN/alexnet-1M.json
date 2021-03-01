@@ -1,0 +1,30 @@
+{
+    "model": "alexnet-1M",
+    "function params": {},
+    "train accuracy": 85.204,
+    "test accuracy": 90.062,
+    "accuracy difference": -4.858000000000004,
+    "num epochs": 100,
+    "num layers": 11,
+    "num params": 26286858,
+    "Conv2d-1": {
+        "kernel size": [
+            11,
+            11
+        ],
+        "stride": [
+            4,
+            4
+        ]
+    },
+    "ReLU-2": {},
+    "AdaptiveAvgPool2d-3": {},
+    "Dropout-4": {},
+    "Linear-5": {},
+    "ReLU-6": {},
+    "Dropout-7": {},
+    "Linear-8": {},
+    "ReLU-9": {},
+    "Linear-10": {},
+    "AlexNet-11": {}
+}

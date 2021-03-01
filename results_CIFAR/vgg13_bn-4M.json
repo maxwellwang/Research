@@ -1,0 +1,46 @@
+{
+    "model": "vgg13_bn-4M",
+    "function params": {
+        "cfg": "B",
+        "batch norm": true
+    },
+    "train accuracy": 92.184,
+    "test accuracy": 84.43,
+    "accuracy difference": 7.753999999999991,
+    "num epochs": 100,
+    "num layers": 15,
+    "num params": 29710410,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "ReLU-6": {},
+    "AdaptiveAvgPool2d-7": {},
+    "Linear-8": {},
+    "ReLU-9": {},
+    "Dropout-10": {},
+    "Linear-11": {},
+    "ReLU-12": {},
+    "Dropout-13": {},
+    "Linear-14": {},
+    "VGG-15": {}
+}

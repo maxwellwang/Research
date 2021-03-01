@@ -1,0 +1,39 @@
+{
+    "model": "custom_resnet11-4",
+    "function params": {
+        "block": "Bottleneck",
+        "layers": [
+            2,
+            8,
+            2,
+            2
+        ],
+        "groups": 32,
+        "width per group": 8
+    },
+    "train accuracy": 35.709,
+    "test accuracy": 35.502,
+    "accuracy difference": 0.20700000000000074,
+    "num epochs": 100,
+    "num layers": 7,
+    "num params": 10186,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-5": {},
+    "Linear-6": {},
+    "ResNet-7": {}
+}

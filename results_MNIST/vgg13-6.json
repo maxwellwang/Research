@@ -1,0 +1,82 @@
+{
+    "model": "vgg13-6",
+    "function params": {
+        "cfg": "B",
+        "batch norm": false
+    },
+    "train accuracy": 99.122,
+    "test accuracy": 98.86,
+    "accuracy difference": 0.26200000000000045,
+    "num epochs": 6,
+    "num layers": 21,
+    "num params": 42775498,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-2": {},
+    "Conv2d-3": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-4": {},
+    "MaxPool2d-5": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "Conv2d-6": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-7": {},
+    "Conv2d-8": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-9": {},
+    "MaxPool2d-10": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "MaxPool2d-11": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "MaxPool2d-12": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-13": {},
+    "Linear-14": {},
+    "ReLU-15": {},
+    "Dropout-16": {},
+    "Linear-17": {},
+    "ReLU-18": {},
+    "Dropout-19": {},
+    "Linear-20": {},
+    "VGG-21": {}
+}

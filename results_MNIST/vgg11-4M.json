@@ -1,0 +1,22 @@
+{
+    "model": "vgg11-4M",
+    "function params": {
+        "cfg": "A",
+        "batch norm": false
+    },
+    "train accuracy": 98.897,
+    "test accuracy": 97.67,
+    "accuracy difference": 1.2270000000000039,
+    "num epochs": 100,
+    "num layers": 9,
+    "num params": 17027082,
+    "AdaptiveAvgPool2d-1": {},
+    "Linear-2": {},
+    "ReLU-3": {},
+    "Dropout-4": {},
+    "Linear-5": {},
+    "ReLU-6": {},
+    "Dropout-7": {},
+    "Linear-8": {},
+    "VGG-9": {}
+}

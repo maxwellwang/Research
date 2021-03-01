@@ -1,0 +1,319 @@
+{
+    "model": "squeezenet1_1",
+    "function params": {},
+    "train accuracy": 9.868,
+    "test accuracy": 9.8,
+    "accuracy difference": 0.06799999999999962,
+    "num epochs": 100,
+    "num layers": 66,
+    "num params": 726474,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "ReLU-2": {},
+    "MaxPool2d-3": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-4": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-5": {},
+    "Conv2d-6": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-7": {},
+    "Conv2d-8": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-9": {},
+    "Fire-10": {},
+    "Conv2d-11": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-12": {},
+    "Conv2d-13": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-14": {},
+    "Conv2d-15": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-16": {},
+    "Fire-17": {},
+    "MaxPool2d-18": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-19": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-20": {},
+    "Conv2d-21": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-22": {},
+    "Conv2d-23": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-24": {},
+    "Fire-25": {},
+    "Conv2d-26": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-27": {},
+    "Conv2d-28": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-29": {},
+    "Conv2d-30": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-31": {},
+    "Fire-32": {},
+    "MaxPool2d-33": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-34": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-35": {},
+    "Conv2d-36": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-37": {},
+    "Conv2d-38": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-39": {},
+    "Fire-40": {},
+    "Conv2d-41": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-42": {},
+    "Conv2d-43": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-44": {},
+    "Conv2d-45": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-46": {},
+    "Fire-47": {},
+    "Conv2d-48": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-49": {},
+    "Conv2d-50": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-51": {},
+    "Conv2d-52": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-53": {},
+    "Fire-54": {},
+    "Conv2d-55": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-56": {},
+    "Conv2d-57": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-58": {},
+    "Conv2d-59": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-60": {},
+    "Fire-61": {},
+    "Dropout-62": {},
+    "Conv2d-63": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-64": {},
+    "AdaptiveAvgPool2d-65": {},
+    "SqueezeNet-66": {}
+}

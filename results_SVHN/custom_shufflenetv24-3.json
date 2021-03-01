@@ -1,0 +1,53 @@
+{
+    "model": "custom_shufflenetv24-3",
+    "function params": {
+        "stages repeats": [
+            4,
+            8,
+            4
+        ],
+        "stages out channels": [
+            24,
+            48,
+            488,
+            976,
+            2048
+        ]
+    },
+    "train accuracy": 41.137,
+    "test accuracy": 30.443,
+    "accuracy difference": 10.693999999999999,
+    "num epochs": 100,
+    "num layers": 9,
+    "num params": 74434,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-5": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-6": {},
+    "ReLU-7": {},
+    "Linear-8": {},
+    "ShuffleNetV2-9": {}
+}

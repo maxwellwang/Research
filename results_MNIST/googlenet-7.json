@@ -1,0 +1,208 @@
+{
+    "model": "googlenet-7",
+    "function params": {},
+    "train accuracy": 99.053,
+    "test accuracy": 98.44,
+    "accuracy difference": 0.6129999999999995,
+    "num epochs": 4,
+    "num layers": 54,
+    "num params": 481770,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "BasicConv2d-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-5": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-6": {},
+    "BasicConv2d-7": {},
+    "MaxPool2d-8": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-9": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-10": {},
+    "BasicConv2d-11": {},
+    "Conv2d-12": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-13": {},
+    "BasicConv2d-14": {},
+    "Conv2d-15": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-16": {},
+    "BasicConv2d-17": {},
+    "Conv2d-18": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-19": {},
+    "BasicConv2d-20": {},
+    "Conv2d-21": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-22": {},
+    "BasicConv2d-23": {},
+    "MaxPool2d-24": {
+        "kernel size": 3,
+        "stride": 1
+    },
+    "Conv2d-25": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-26": {},
+    "BasicConv2d-27": {},
+    "Inception-28": {},
+    "Conv2d-29": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-30": {},
+    "BasicConv2d-31": {},
+    "Conv2d-32": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-33": {},
+    "BasicConv2d-34": {},
+    "Conv2d-35": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-36": {},
+    "BasicConv2d-37": {},
+    "Conv2d-38": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-39": {},
+    "BasicConv2d-40": {},
+    "Conv2d-41": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-42": {},
+    "BasicConv2d-43": {},
+    "MaxPool2d-44": {
+        "kernel size": 3,
+        "stride": 1
+    },
+    "Conv2d-45": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-46": {},
+    "BasicConv2d-47": {},
+    "Inception-48": {},
+    "MaxPool2d-49": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "MaxPool2d-50": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-51": {},
+    "Dropout-52": {},
+    "Linear-53": {},
+    "GoogLeNet-54": {}
+}

@@ -1,0 +1,34 @@
+{
+    "model": "vgg11-1M",
+    "function params": {
+        "cfg": "A",
+        "batch norm": false
+    },
+    "train accuracy": 42.846,
+    "test accuracy": 46.05,
+    "accuracy difference": -3.2040000000000006,
+    "num epochs": 100,
+    "num layers": 12,
+    "num params": 17428490,
+    "MaxPool2d-1": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "MaxPool2d-2": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "MaxPool2d-3": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-4": {},
+    "Linear-5": {},
+    "ReLU-6": {},
+    "Dropout-7": {},
+    "Linear-8": {},
+    "ReLU-9": {},
+    "Dropout-10": {},
+    "Linear-11": {},
+    "VGG-12": {}
+}

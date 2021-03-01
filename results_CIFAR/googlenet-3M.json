@@ -1,0 +1,42 @@
+{
+    "model": "googlenet-3M",
+    "function params": {},
+    "train accuracy": 59.44,
+    "test accuracy": 61.43,
+    "accuracy difference": -1.990000000000002,
+    "num epochs": 100,
+    "num layers": 11,
+    "num params": 14410,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "BasicConv2d-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-5": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-6": {},
+    "BasicConv2d-7": {},
+    "AdaptiveAvgPool2d-8": {},
+    "Dropout-9": {},
+    "Linear-10": {},
+    "GoogLeNet-11": {}
+}

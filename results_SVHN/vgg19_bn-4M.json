@@ -1,0 +1,118 @@
+{
+    "model": "vgg19_bn-4M",
+    "function params": {
+        "cfg": "E",
+        "batch norm": true
+    },
+    "train accuracy": 98.418,
+    "test accuracy": 95.479,
+    "accuracy difference": 2.939000000000007,
+    "num epochs": 100,
+    "num layers": 33,
+    "num params": 70534986,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "ReLU-6": {},
+    "Conv2d-7": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-8": {},
+    "ReLU-9": {},
+    "Conv2d-10": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-11": {},
+    "ReLU-12": {},
+    "Conv2d-13": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-14": {},
+    "ReLU-15": {},
+    "Conv2d-16": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-17": {},
+    "ReLU-18": {},
+    "Conv2d-19": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-20": {},
+    "ReLU-21": {},
+    "Conv2d-22": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-23": {},
+    "ReLU-24": {},
+    "AdaptiveAvgPool2d-25": {},
+    "Linear-26": {},
+    "ReLU-27": {},
+    "Dropout-28": {},
+    "Linear-29": {},
+    "ReLU-30": {},
+    "Dropout-31": {},
+    "Linear-32": {},
+    "VGG-33": {}
+}

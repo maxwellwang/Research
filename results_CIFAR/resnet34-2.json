@@ -1,0 +1,239 @@
+{
+    "model": "resnet34-2",
+    "function params": {
+        "block": "BasicBlock",
+        "layers": [
+            3,
+            4,
+            6,
+            3
+        ],
+        "groups": 1,
+        "width per group": 64
+    },
+    "train accuracy": 95.898,
+    "test accuracy": 83.76,
+    "accuracy difference": 12.137999999999991,
+    "num epochs": 100,
+    "num layers": 58,
+    "num params": 1349194,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-5": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-6": {},
+    "ReLU-7": {},
+    "Conv2d-8": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-9": {},
+    "ReLU-10": {},
+    "BasicBlock-11": {
+        "stride": 1
+    },
+    "Conv2d-12": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-13": {},
+    "ReLU-14": {},
+    "Conv2d-15": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-16": {},
+    "ReLU-17": {},
+    "BasicBlock-18": {
+        "stride": 1
+    },
+    "Conv2d-19": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-20": {},
+    "ReLU-21": {},
+    "Conv2d-22": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-23": {},
+    "ReLU-24": {},
+    "BasicBlock-25": {
+        "stride": 1
+    },
+    "Conv2d-26": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-27": {},
+    "ReLU-28": {},
+    "Conv2d-29": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-30": {},
+    "Conv2d-31": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-32": {},
+    "ReLU-33": {},
+    "BasicBlock-34": {
+        "stride": 2
+    },
+    "Conv2d-35": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-36": {},
+    "ReLU-37": {},
+    "Conv2d-38": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-39": {},
+    "ReLU-40": {},
+    "BasicBlock-41": {
+        "stride": 1
+    },
+    "Conv2d-42": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-43": {},
+    "ReLU-44": {},
+    "Conv2d-45": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-46": {},
+    "ReLU-47": {},
+    "BasicBlock-48": {
+        "stride": 1
+    },
+    "Conv2d-49": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-50": {},
+    "ReLU-51": {},
+    "Conv2d-52": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-53": {},
+    "ReLU-54": {},
+    "BasicBlock-55": {
+        "stride": 1
+    },
+    "AdaptiveAvgPool2d-56": {},
+    "Linear-57": {},
+    "ResNet-58": {}
+}

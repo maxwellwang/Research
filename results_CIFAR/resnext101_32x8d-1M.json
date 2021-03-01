@@ -1,0 +1,35 @@
+{
+    "model": "resnext101_32x8d-1M",
+    "function params": {
+        "block": "Bottleneck",
+        "layers": [
+            3,
+            4,
+            23,
+            3
+        ],
+        "groups": 32,
+        "width per group": 8
+    },
+    "train accuracy": 50.73,
+    "test accuracy": 49.39,
+    "accuracy difference": 1.3399999999999963,
+    "num epochs": 100,
+    "num layers": 6,
+    "num params": 10186,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "AdaptiveAvgPool2d-4": {},
+    "Linear-5": {},
+    "ResNet-6": {}
+}

@@ -1,0 +1,63 @@
+{
+    "model": "mobilenet_v2-6",
+    "function params": {},
+    "train accuracy": 96.81,
+    "test accuracy": 96.21,
+    "accuracy difference": 0.6000000000000085,
+    "num epochs": 100,
+    "num layers": 15,
+    "num params": 37098,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU6-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "ReLU6-6": {},
+    "Conv2d-7": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-8": {},
+    "InvertedResidual-9": {
+        "stride": 1
+    },
+    "Conv2d-10": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-11": {},
+    "ReLU6-12": {},
+    "Dropout-13": {},
+    "Linear-14": {},
+    "MobileNetV2-15": {}
+}

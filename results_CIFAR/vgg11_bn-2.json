@@ -1,0 +1,110 @@
+{
+    "model": "vgg11_bn-2",
+    "function params": {
+        "cfg": "A",
+        "batch norm": true
+    },
+    "train accuracy": 98.526,
+    "test accuracy": 87.54,
+    "accuracy difference": 10.98599999999999,
+    "num epochs": 100,
+    "num layers": 31,
+    "num params": 124091146,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "Conv2d-5": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-6": {},
+    "ReLU-7": {},
+    "MaxPool2d-8": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "Conv2d-9": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-10": {},
+    "ReLU-11": {},
+    "Conv2d-12": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-13": {},
+    "ReLU-14": {},
+    "MaxPool2d-15": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "Conv2d-16": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-17": {},
+    "ReLU-18": {},
+    "Conv2d-19": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-20": {},
+    "ReLU-21": {},
+    "MaxPool2d-22": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-23": {},
+    "Linear-24": {},
+    "ReLU-25": {},
+    "Dropout-26": {},
+    "Linear-27": {},
+    "ReLU-28": {},
+    "Dropout-29": {},
+    "Linear-30": {},
+    "VGG-31": {}
+}

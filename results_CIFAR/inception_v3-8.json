@@ -1,0 +1,167 @@
+{
+    "model": "inception_v3-8",
+    "function params": {},
+    "train accuracy": 86.06,
+    "test accuracy": 80.6,
+    "accuracy difference": 5.460000000000008,
+    "num epochs": 100,
+    "num layers": 43,
+    "num params": 632074,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "BasicConv2d-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "BasicConv2d-6": {},
+    "Conv2d-7": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-8": {},
+    "BasicConv2d-9": {},
+    "MaxPool2d-10": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-11": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-12": {},
+    "BasicConv2d-13": {},
+    "Conv2d-14": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-15": {},
+    "BasicConv2d-16": {},
+    "MaxPool2d-17": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-18": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-19": {},
+    "BasicConv2d-20": {},
+    "Conv2d-21": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-22": {},
+    "BasicConv2d-23": {},
+    "Conv2d-24": {
+        "kernel size": [
+            5,
+            5
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-25": {},
+    "BasicConv2d-26": {},
+    "Conv2d-27": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-28": {},
+    "BasicConv2d-29": {},
+    "Conv2d-30": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-31": {},
+    "BasicConv2d-32": {},
+    "Conv2d-33": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-34": {},
+    "BasicConv2d-35": {},
+    "Conv2d-36": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-37": {},
+    "BasicConv2d-38": {},
+    "InceptionA-39": {},
+    "AdaptiveAvgPool2d-40": {},
+    "Dropout-41": {},
+    "Linear-42": {},
+    "Inception3-43": {}
+}

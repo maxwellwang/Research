@@ -1,0 +1,131 @@
+{
+    "model": "googlenet-8",
+    "function params": {},
+    "train accuracy": 90.103,
+    "test accuracy": 90.738,
+    "accuracy difference": -0.6350000000000051,
+    "num epochs": 100,
+    "num layers": 34,
+    "num params": 145578,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "BasicConv2d-3": {},
+    "MaxPool2d-4": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-5": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-6": {},
+    "BasicConv2d-7": {},
+    "MaxPool2d-8": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-9": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-10": {},
+    "BasicConv2d-11": {},
+    "Conv2d-12": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-13": {},
+    "BasicConv2d-14": {},
+    "Conv2d-15": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-16": {},
+    "BasicConv2d-17": {},
+    "Conv2d-18": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-19": {},
+    "BasicConv2d-20": {},
+    "Conv2d-21": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-22": {},
+    "BasicConv2d-23": {},
+    "MaxPool2d-24": {
+        "kernel size": 3,
+        "stride": 1
+    },
+    "Conv2d-25": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-26": {},
+    "BasicConv2d-27": {},
+    "Inception-28": {},
+    "MaxPool2d-29": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "MaxPool2d-30": {
+        "kernel size": 2,
+        "stride": 2
+    },
+    "AdaptiveAvgPool2d-31": {},
+    "Dropout-32": {},
+    "Linear-33": {},
+    "GoogLeNet-34": {}
+}

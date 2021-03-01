@@ -1,0 +1,39 @@
+{
+    "model": "squeezenet1_0-2M",
+    "function params": {},
+    "train accuracy": 31.667,
+    "test accuracy": 33.23,
+    "accuracy difference": -1.5629999999999953,
+    "num epochs": 100,
+    "num layers": 8,
+    "num params": 5770,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "ReLU-2": {},
+    "MaxPool2d-3": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Dropout-4": {},
+    "Conv2d-5": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "ReLU-6": {},
+    "AdaptiveAvgPool2d-7": {},
+    "SqueezeNet-8": {}
+}

@@ -1,0 +1,139 @@
+{
+    "model": "mobilenet_v2-5",
+    "function params": {},
+    "train accuracy": 80.362,
+    "test accuracy": 78.34,
+    "accuracy difference": 2.0219999999999914,
+    "num epochs": 100,
+    "num layers": 33,
+    "num params": 61882,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU6-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "ReLU6-6": {},
+    "Conv2d-7": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-8": {},
+    "InvertedResidual-9": {
+        "stride": 1
+    },
+    "Conv2d-10": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-11": {},
+    "ReLU6-12": {},
+    "Conv2d-13": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-14": {},
+    "ReLU6-15": {},
+    "Conv2d-16": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-17": {},
+    "InvertedResidual-18": {
+        "stride": 2
+    },
+    "Conv2d-19": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-20": {},
+    "ReLU6-21": {},
+    "Conv2d-22": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-23": {},
+    "ReLU6-24": {},
+    "Conv2d-25": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-26": {},
+    "InvertedResidual-27": {
+        "stride": 1
+    },
+    "Conv2d-28": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-29": {},
+    "ReLU6-30": {},
+    "Dropout-31": {},
+    "Linear-32": {},
+    "MobileNetV2-33": {}
+}

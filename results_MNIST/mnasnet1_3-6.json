@@ -1,0 +1,62 @@
+{
+    "model": "mnasnet1_3-6",
+    "function params": {
+        "alpha": 1.3
+    },
+    "train accuracy": 97.7,
+    "test accuracy": 96.42,
+    "accuracy difference": 1.2800000000000011,
+    "num epochs": 100,
+    "num layers": 14,
+    "num params": 47978,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "ReLU-6": {},
+    "Conv2d-7": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-8": {},
+    "Conv2d-9": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-10": {},
+    "ReLU-11": {},
+    "Dropout-12": {},
+    "Linear-13": {},
+    "MNASNet-14": {}
+}

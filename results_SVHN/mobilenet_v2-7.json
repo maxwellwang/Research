@@ -1,0 +1,37 @@
+{
+    "model": "mobilenet_v2-7",
+    "function params": {},
+    "train accuracy": 31.774,
+    "test accuracy": 31.181,
+    "accuracy difference": 0.593,
+    "num epochs": 100,
+    "num layers": 9,
+    "num params": 57258,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU6-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "ReLU6-6": {},
+    "Dropout-7": {},
+    "Linear-8": {},
+    "MobileNetV2-9": {}
+}

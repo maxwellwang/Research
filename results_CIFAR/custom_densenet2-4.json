@@ -1,0 +1,34 @@
+{
+    "model": "custom_densenet2-4",
+    "function params": {
+        "growth rate": 48,
+        "block config": [
+            6,
+            12,
+            24,
+            24
+        ],
+        "num init features": 96
+    },
+    "train accuracy": 54.732,
+    "test accuracy": 53.22,
+    "accuracy difference": 1.5120000000000005,
+    "num epochs": 100,
+    "num layers": 6,
+    "num params": 15466,
+    "Conv2d-1": {
+        "kernel size": [
+            7,
+            7
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "ReLU-3": {},
+    "BatchNorm2d-4": {},
+    "Linear-5": {},
+    "DenseNet-6": {}
+}

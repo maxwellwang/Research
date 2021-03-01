@@ -1,0 +1,337 @@
+{
+    "model": "inception_v3-6",
+    "function params": {},
+    "train accuracy": 87.198,
+    "test accuracy": 80.31,
+    "accuracy difference": 6.887999999999991,
+    "num epochs": 100,
+    "num layers": 87,
+    "num params": 1195018,
+    "Conv2d-1": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            2,
+            2
+        ]
+    },
+    "BatchNorm2d-2": {},
+    "BasicConv2d-3": {},
+    "Conv2d-4": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-5": {},
+    "BasicConv2d-6": {},
+    "Conv2d-7": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-8": {},
+    "BasicConv2d-9": {},
+    "MaxPool2d-10": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-11": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-12": {},
+    "BasicConv2d-13": {},
+    "Conv2d-14": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-15": {},
+    "BasicConv2d-16": {},
+    "MaxPool2d-17": {
+        "kernel size": 3,
+        "stride": 2
+    },
+    "Conv2d-18": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-19": {},
+    "BasicConv2d-20": {},
+    "Conv2d-21": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-22": {},
+    "BasicConv2d-23": {},
+    "Conv2d-24": {
+        "kernel size": [
+            5,
+            5
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-25": {},
+    "BasicConv2d-26": {},
+    "Conv2d-27": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-28": {},
+    "BasicConv2d-29": {},
+    "Conv2d-30": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-31": {},
+    "BasicConv2d-32": {},
+    "Conv2d-33": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-34": {},
+    "BasicConv2d-35": {},
+    "Conv2d-36": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-37": {},
+    "BasicConv2d-38": {},
+    "InceptionA-39": {},
+    "Conv2d-40": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-41": {},
+    "BasicConv2d-42": {},
+    "Conv2d-43": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-44": {},
+    "BasicConv2d-45": {},
+    "Conv2d-46": {
+        "kernel size": [
+            5,
+            5
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-47": {},
+    "BasicConv2d-48": {},
+    "Conv2d-49": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-50": {},
+    "BasicConv2d-51": {},
+    "Conv2d-52": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-53": {},
+    "BasicConv2d-54": {},
+    "Conv2d-55": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-56": {},
+    "BasicConv2d-57": {},
+    "Conv2d-58": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-59": {},
+    "BasicConv2d-60": {},
+    "InceptionA-61": {},
+    "Conv2d-62": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-63": {},
+    "BasicConv2d-64": {},
+    "Conv2d-65": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-66": {},
+    "BasicConv2d-67": {},
+    "Conv2d-68": {
+        "kernel size": [
+            5,
+            5
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-69": {},
+    "BasicConv2d-70": {},
+    "Conv2d-71": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-72": {},
+    "BasicConv2d-73": {},
+    "Conv2d-74": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-75": {},
+    "BasicConv2d-76": {},
+    "Conv2d-77": {
+        "kernel size": [
+            3,
+            3
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-78": {},
+    "BasicConv2d-79": {},
+    "Conv2d-80": {
+        "kernel size": [
+            1,
+            1
+        ],
+        "stride": [
+            1,
+            1
+        ]
+    },
+    "BatchNorm2d-81": {},
+    "BasicConv2d-82": {},
+    "InceptionA-83": {},
+    "AdaptiveAvgPool2d-84": {},
+    "Dropout-85": {},
+    "Linear-86": {},
+    "Inception3-87": {}
+}
