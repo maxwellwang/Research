@@ -5,13 +5,18 @@ import json
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.preprocessing import PolynomialFeatures
+import math
 
 
-def num_conv_layers(params):
-    ret = 0
+def flatten_net(params):
+    ret = []
     for key in params.keys():
         if key.startswith('Conv'):
-            ret += 1
+            conv_layer = params[key]
+            for i in conv_layer["kernel size"]:
+                ret.append(i)
+            for i in conv_layer["stride"]:
+                ret.append(i)
     return ret
 
 
@@ -28,94 +33,124 @@ def remove_outliers(X, y):
     y_iqr = y_q3 - y_q1
     y_upper = y_q3 + 1.5 * y_iqr
     y_lower = y_q1 - 1.5 * y_iqr
-    for i in range(len(X) - 1, -1, -1):
-        x_val = X[i]
-        y_val = y[i]
-        if x_val < x_lower or x_val > x_upper or y_val < y_lower or y_val > y_upper:
-            X.pop(i)
-            y.pop(i)
+    coordinates_list = []
+    for i in range(len(X)):
+        coordinates_list.append((X[i], y[i]))
+    filtered_coordinates_list = []
+    for x_val, y_val in coordinates_list:
+        if x_lower <= x_val <= x_upper and y_lower <= y_val <= y_upper:
+            filtered_coordinates_list.append((x_val, y_val))
+    X.clear()
+    y.clear()
+    for x_val, y_val in filtered_coordinates_list:
+        X.append(x_val)
+        y.append(y_val)
     return X, y
 
 
-def simplify_clusters(X, y):
-    data = set()
+def compress_vertical_lines(X, y):
+    buckets = []
     for i in range(len(X)):
-        data.add((X[i], y[i]))
-    new_X, new_y = [], []
-    while len(data) > 0:
-        first = data.pop()
-        temp = {first}  # only 1 point from temp will be added to new_x, new_y
-        for point in data:
-            if point[0] == first[0]:
-                temp.add(point)
-        # find median y coordinate from temp points
-        y_values = [point[1] for point in temp]
+        if len(buckets) == 0:
+            buckets.append([(X[i], y[i])])
+        else:
+            new_bucket = True
+            for bucket in buckets:
+                if bucket[0][0] == X[i]:
+                    new_bucket = False
+                    bucket.append((X[i], y[i]))
+                    break
+            if new_bucket:
+                buckets.append([(X[i], y[i])])
+
+    coordinates_list = []
+    for bucket in buckets:
+        y_values = []
+        for coordinates in bucket:
+            y_values.append(coordinates[1])
         median = np.quantile(y_values, .5)
-        for point in temp:
-            if point[1] == median:
-                new_X.append(point[0])
-                new_y.append(point[1])
+        for coordinates in bucket:
+            if coordinates[1] == median:
+                coordinates_list.append(coordinates)
                 break
+    X.clear()
+    y.clear()
+    for x_val, y_val in coordinates_list:
+        X.append(x_val)
+        y.append(y_val)
+    return X, y
+
+
+def sort(X, y):
+    new_X, new_y = [], []
+    while len(X) > 0:
+        min_val = min(X)
+        index = X.index(min_val)
+        X.remove(min_val)
+        y_val = y.pop(index)
+        new_X.append(min_val)
+        new_y.append(y_val)
     return new_X, new_y
 
 
-dataset = 'CIFAR'  # options are [MNIST, CIFAR, SVHN]
-results_path = './results_' + dataset + '/'
-X = []
-y = []
-for filename in os.listdir(results_path):
-    with open(results_path + filename) as json_file:
-        params = json.load(json_file)
-        cl = num_conv_layers(params)
-        ad = params['accuracy difference']
-        X.append(cl)
-        y.append(ad)
-X, y = remove_outliers(X, y)
-X, y = simplify_clusters(X, y)
-min_x = 0
-max_x = max(X)
-min_y = min(y)
-max_y = max(y)
-print("Number of nets: " + str(len(y)))
-print('X: ' + str(X))
-print('y: ' + str(y))
-X, y = np.asarray(X), np.asarray(y)
-X = X.reshape(-1, 1)
+def get_data(dataset):
+    results_path = './results_' + dataset + '/'
+    X = []
+    y = []
+    max_len = 0
+    for filename in os.listdir(results_path):
+        with open(results_path + filename) as json_file:
+            params = json.load(json_file)
+            fn = flatten_net(params)
+            max_len = max(len(fn), max_len)
+            l = params['num layers']
+            w = params['num params']
+            ad = params['accuracy difference']
+            X.append(fn)
+            y.append(round(ad, 2))
+    """
+    X, y = remove_outliers(X, y)
+    X, y = compress_vertical_lines(X, y)
+    X, y = sort(X, y)
+    """
+    for fn in X:
+        while len(fn) < max_len:
+            fn.append(0)
 
-degree = 2
-poly = PolynomialFeatures(degree)
-X_poly = poly.fit_transform(X)
-model = LinearRegression()
-model.fit(X_poly, y)
+    print(dataset)
+    # print("Number of nets: " + str(len(y)))
+    # print('X: ' + str(X))
+    # print('y: ' + str(y))
+    return X, y
 
-'''
-# Use Hummingbird to convert the model to PyTorch
-model = convert(model, 'pytorch')
 
-# Run predictions on CPU
-model.predict(X_poly)
+def run(dataset, degree):
+    X, y = get_data(dataset)
 
-# Run predictions on GPU
-model.to('cuda')
-model.predict(X_poly)
+    poly = PolynomialFeatures(degree)
+    X_poly = poly.fit_transform(X)
+    model = LinearRegression()
+    model.fit(X_poly, y)
 
-# Save the model
-model.save('hb_model')
+    """
+    plt.scatter(X, y)
+    y_pred = model.predict(X_poly)
+    plt.plot(X_poly[:, 1], y_pred, color='red', linewidth=3)
+    plt.plot([0, max_x], [0, 0], color='green', linewidth=3)
+    plt.grid()
+    plt.xlim(min_x, max_x)
+    plt.ylim(min_y, max_y)
+    title = dataset
+    plt.title(title)
+    plt.xlabel('x')
+    plt.ylabel('Accuracy Difference')
+    plt.savefig(dataset + '_regression.png', bbox_inches='tight')
+    plt.show()
+    """
 
-# Load the model back
-model = hummingbird.ml.load('hb_model')
-'''
-plt.scatter(X, y)
-X_plot = np.linspace(min_x, max_x, len(y)).reshape(-1, 1)
-X_plot_poly = poly.fit_transform(X_plot)
-y_pred = model.predict(X_plot_poly)
-plt.plot(X_plot_poly[:, 1], y_pred, color='red', linewidth=3)
-plt.grid()
-plt.xlim(min_x, max_x)
-plt.ylim(min_y, max_y)
-title = dataset + ': Degree = {}, R2: {}'.format(degree, r2_score(y, y_pred))
-plt.title(title)
-plt.xlabel('Number of Conv Layers')
-plt.ylabel('Accuracy Difference')
-plt.savefig(dataset + '_regression.png', bbox_inches='tight')
-plt.show()
+    y_pred = model.predict(X_poly)
+    print('R2: ' + str(round(r2_score(y, y_pred), 2)))
+
+
+for dataset in ['MNIST', 'CIFAR', 'SVHN']:
+    run(dataset, 2)
