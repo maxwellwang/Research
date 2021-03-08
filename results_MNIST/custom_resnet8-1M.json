@@ -17,19 +17,32 @@
     "num epochs": 100,
     "num layers": 6,
     "num params": 3914,
-    "Conv2d-1": {
-        "kernel size": [
-            7,
-            7
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "ReLU-3": {},
-    "AdaptiveAvgPool2d-4": {},
-    "Linear-5": {},
-    "ResNet-6": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                7,
+                7
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-4"
+        },
+        {
+            "name": "Linear-5"
+        },
+        {
+            "name": "ResNet-6"
+        }
+    ]
 }

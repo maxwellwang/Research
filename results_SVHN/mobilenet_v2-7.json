@@ -7,31 +7,49 @@
     "num epochs": 100,
     "num layers": 9,
     "num params": 57258,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "ReLU6-3": {},
-    "Conv2d-4": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-5": {},
-    "ReLU6-6": {},
-    "Dropout-7": {},
-    "Linear-8": {},
-    "MobileNetV2-9": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU6-3"
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-5"
+        },
+        {
+            "name": "ReLU6-6"
+        },
+        {
+            "name": "Dropout-7"
+        },
+        {
+            "name": "Linear-8"
+        },
+        {
+            "name": "MobileNetV2-9"
+        }
+    ]
 }

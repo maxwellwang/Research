@@ -17,77 +17,113 @@
     "num epochs": 6,
     "num layers": 21,
     "num params": 151882,
-    "Conv2d-1": {
-        "kernel size": [
-            7,
-            7
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "ReLU-3": {},
-    "MaxPool2d-4": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "Conv2d-5": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-6": {},
-    "ReLU-7": {},
-    "Conv2d-8": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-9": {},
-    "ReLU-10": {},
-    "BasicBlock-11": {
-        "stride": 1
-    },
-    "Conv2d-12": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-13": {},
-    "ReLU-14": {},
-    "Conv2d-15": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-16": {},
-    "ReLU-17": {},
-    "BasicBlock-18": {
-        "stride": 1
-    },
-    "AdaptiveAvgPool2d-19": {},
-    "Linear-20": {},
-    "ResNet-21": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                7,
+                7
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "MaxPool2d-4",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-5",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-6"
+        },
+        {
+            "name": "ReLU-7"
+        },
+        {
+            "name": "Conv2d-8",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-9"
+        },
+        {
+            "name": "ReLU-10"
+        },
+        {
+            "name": "BasicBlock-11",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-12",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-13"
+        },
+        {
+            "name": "ReLU-14"
+        },
+        {
+            "name": "Conv2d-15",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-16"
+        },
+        {
+            "name": "ReLU-17"
+        },
+        {
+            "name": "BasicBlock-18",
+            "stride": 1
+        },
+        {
+            "name": "AdaptiveAvgPool2d-19"
+        },
+        {
+            "name": "Linear-20"
+        },
+        {
+            "name": "ResNet-21"
+        }
+    ]
 }

@@ -20,30 +20,46 @@
     "num epochs": 100,
     "num layers": 8,
     "num params": 37570,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "ReLU-3": {},
-    "Conv2d-4": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-5": {},
-    "ReLU-6": {},
-    "Linear-7": {},
-    "ShuffleNetV2-8": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-5"
+        },
+        {
+            "name": "ReLU-6"
+        },
+        {
+            "name": "Linear-7"
+        },
+        {
+            "name": "ShuffleNetV2-8"
+        }
+    ]
 }

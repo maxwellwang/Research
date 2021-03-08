@@ -9,54 +9,80 @@
     "num epochs": 100,
     "num layers": 14,
     "num params": 47978,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "ReLU-3": {},
-    "Conv2d-4": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-5": {},
-    "ReLU-6": {},
-    "Conv2d-7": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-8": {},
-    "Conv2d-9": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-10": {},
-    "ReLU-11": {},
-    "Dropout-12": {},
-    "Linear-13": {},
-    "MNASNet-14": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-5"
+        },
+        {
+            "name": "ReLU-6"
+        },
+        {
+            "name": "Conv2d-7",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-8"
+        },
+        {
+            "name": "Conv2d-9",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-10"
+        },
+        {
+            "name": "ReLU-11"
+        },
+        {
+            "name": "Dropout-12"
+        },
+        {
+            "name": "Linear-13"
+        },
+        {
+            "name": "MNASNet-14"
+        }
+    ]
 }

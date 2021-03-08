@@ -7,41 +7,58 @@
     "num epochs": 100,
     "num layers": 10,
     "num params": 1290,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "ReLU-2": {},
-    "MaxPool2d-3": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "MaxPool2d-4": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "MaxPool2d-5": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "Dropout-6": {},
-    "Conv2d-7": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-8": {},
-    "AdaptiveAvgPool2d-9": {},
-    "SqueezeNet-10": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "ReLU-2"
+        },
+        {
+            "name": "MaxPool2d-3",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-4",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-5",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "Dropout-6"
+        },
+        {
+            "name": "Conv2d-7",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-8"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-9"
+        },
+        {
+            "name": "SqueezeNet-10"
+        }
+    ]
 }

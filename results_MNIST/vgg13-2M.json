@@ -10,43 +10,71 @@
     "num epochs": 6,
     "num layers": 15,
     "num params": 29709002,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-2": {},
-    "Conv2d-3": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-4": {},
-    "MaxPool2d-5": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "MaxPool2d-6": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "AdaptiveAvgPool2d-7": {},
-    "Linear-8": {},
-    "ReLU-9": {},
-    "Dropout-10": {},
-    "Linear-11": {},
-    "ReLU-12": {},
-    "Dropout-13": {},
-    "Linear-14": {},
-    "VGG-15": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-2"
+        },
+        {
+            "name": "Conv2d-3",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-4"
+        },
+        {
+            "name": "MaxPool2d-5",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-6",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "AdaptiveAvgPool2d-7"
+        },
+        {
+            "name": "Linear-8"
+        },
+        {
+            "name": "ReLU-9"
+        },
+        {
+            "name": "Dropout-10"
+        },
+        {
+            "name": "Linear-11"
+        },
+        {
+            "name": "ReLU-12"
+        },
+        {
+            "name": "Dropout-13"
+        },
+        {
+            "name": "Linear-14"
+        },
+        {
+            "name": "VGG-15"
+        }
+    ]
 }

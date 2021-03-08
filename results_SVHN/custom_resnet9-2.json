@@ -17,435 +17,615 @@
     "num epochs": 100,
     "num layers": 111,
     "num params": 2499914,
-    "Conv2d-1": {
-        "kernel size": [
-            7,
-            7
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "ReLU-3": {},
-    "MaxPool2d-4": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "Conv2d-5": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-6": {},
-    "ReLU-7": {},
-    "Conv2d-8": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-9": {},
-    "ReLU-10": {},
-    "Conv2d-11": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-12": {},
-    "Conv2d-13": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-14": {},
-    "ReLU-15": {},
-    "Bottleneck-16": {
-        "stride": 1
-    },
-    "Conv2d-17": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-18": {},
-    "ReLU-19": {},
-    "Conv2d-20": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-21": {},
-    "ReLU-22": {},
-    "Conv2d-23": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-24": {},
-    "ReLU-25": {},
-    "Bottleneck-26": {
-        "stride": 1
-    },
-    "Conv2d-27": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-28": {},
-    "ReLU-29": {},
-    "Conv2d-30": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-31": {},
-    "ReLU-32": {},
-    "Conv2d-33": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-34": {},
-    "Conv2d-35": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-36": {},
-    "ReLU-37": {},
-    "Bottleneck-38": {
-        "stride": 2
-    },
-    "Conv2d-39": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-40": {},
-    "ReLU-41": {},
-    "Conv2d-42": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-43": {},
-    "ReLU-44": {},
-    "Conv2d-45": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-46": {},
-    "ReLU-47": {},
-    "Bottleneck-48": {
-        "stride": 1
-    },
-    "Conv2d-49": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-50": {},
-    "ReLU-51": {},
-    "Conv2d-52": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-53": {},
-    "ReLU-54": {},
-    "Conv2d-55": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-56": {},
-    "ReLU-57": {},
-    "Bottleneck-58": {
-        "stride": 1
-    },
-    "Conv2d-59": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-60": {},
-    "ReLU-61": {},
-    "Conv2d-62": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-63": {},
-    "ReLU-64": {},
-    "Conv2d-65": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-66": {},
-    "ReLU-67": {},
-    "Bottleneck-68": {
-        "stride": 1
-    },
-    "Conv2d-69": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-70": {},
-    "ReLU-71": {},
-    "Conv2d-72": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-73": {},
-    "ReLU-74": {},
-    "Conv2d-75": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-76": {},
-    "ReLU-77": {},
-    "Bottleneck-78": {
-        "stride": 1
-    },
-    "Conv2d-79": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-80": {},
-    "ReLU-81": {},
-    "Conv2d-82": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-83": {},
-    "ReLU-84": {},
-    "Conv2d-85": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-86": {},
-    "ReLU-87": {},
-    "Bottleneck-88": {
-        "stride": 1
-    },
-    "Conv2d-89": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-90": {},
-    "ReLU-91": {},
-    "Conv2d-92": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-93": {},
-    "ReLU-94": {},
-    "Conv2d-95": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-96": {},
-    "ReLU-97": {},
-    "Bottleneck-98": {
-        "stride": 1
-    },
-    "Conv2d-99": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-100": {},
-    "ReLU-101": {},
-    "Conv2d-102": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-103": {},
-    "ReLU-104": {},
-    "Conv2d-105": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-106": {},
-    "ReLU-107": {},
-    "Bottleneck-108": {
-        "stride": 1
-    },
-    "AdaptiveAvgPool2d-109": {},
-    "Linear-110": {},
-    "ResNet-111": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                7,
+                7
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "MaxPool2d-4",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-5",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-6"
+        },
+        {
+            "name": "ReLU-7"
+        },
+        {
+            "name": "Conv2d-8",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-9"
+        },
+        {
+            "name": "ReLU-10"
+        },
+        {
+            "name": "Conv2d-11",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-12"
+        },
+        {
+            "name": "Conv2d-13",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-14"
+        },
+        {
+            "name": "ReLU-15"
+        },
+        {
+            "name": "Bottleneck-16",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-17",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-18"
+        },
+        {
+            "name": "ReLU-19"
+        },
+        {
+            "name": "Conv2d-20",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-21"
+        },
+        {
+            "name": "ReLU-22"
+        },
+        {
+            "name": "Conv2d-23",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-24"
+        },
+        {
+            "name": "ReLU-25"
+        },
+        {
+            "name": "Bottleneck-26",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-27",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-28"
+        },
+        {
+            "name": "ReLU-29"
+        },
+        {
+            "name": "Conv2d-30",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-31"
+        },
+        {
+            "name": "ReLU-32"
+        },
+        {
+            "name": "Conv2d-33",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-34"
+        },
+        {
+            "name": "Conv2d-35",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-36"
+        },
+        {
+            "name": "ReLU-37"
+        },
+        {
+            "name": "Bottleneck-38",
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-39",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-40"
+        },
+        {
+            "name": "ReLU-41"
+        },
+        {
+            "name": "Conv2d-42",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-43"
+        },
+        {
+            "name": "ReLU-44"
+        },
+        {
+            "name": "Conv2d-45",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-46"
+        },
+        {
+            "name": "ReLU-47"
+        },
+        {
+            "name": "Bottleneck-48",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-49",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-50"
+        },
+        {
+            "name": "ReLU-51"
+        },
+        {
+            "name": "Conv2d-52",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-53"
+        },
+        {
+            "name": "ReLU-54"
+        },
+        {
+            "name": "Conv2d-55",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-56"
+        },
+        {
+            "name": "ReLU-57"
+        },
+        {
+            "name": "Bottleneck-58",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-59",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-60"
+        },
+        {
+            "name": "ReLU-61"
+        },
+        {
+            "name": "Conv2d-62",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-63"
+        },
+        {
+            "name": "ReLU-64"
+        },
+        {
+            "name": "Conv2d-65",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-66"
+        },
+        {
+            "name": "ReLU-67"
+        },
+        {
+            "name": "Bottleneck-68",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-69",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-70"
+        },
+        {
+            "name": "ReLU-71"
+        },
+        {
+            "name": "Conv2d-72",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-73"
+        },
+        {
+            "name": "ReLU-74"
+        },
+        {
+            "name": "Conv2d-75",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-76"
+        },
+        {
+            "name": "ReLU-77"
+        },
+        {
+            "name": "Bottleneck-78",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-79",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-80"
+        },
+        {
+            "name": "ReLU-81"
+        },
+        {
+            "name": "Conv2d-82",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-83"
+        },
+        {
+            "name": "ReLU-84"
+        },
+        {
+            "name": "Conv2d-85",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-86"
+        },
+        {
+            "name": "ReLU-87"
+        },
+        {
+            "name": "Bottleneck-88",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-89",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-90"
+        },
+        {
+            "name": "ReLU-91"
+        },
+        {
+            "name": "Conv2d-92",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-93"
+        },
+        {
+            "name": "ReLU-94"
+        },
+        {
+            "name": "Conv2d-95",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-96"
+        },
+        {
+            "name": "ReLU-97"
+        },
+        {
+            "name": "Bottleneck-98",
+            "stride": 1
+        },
+        {
+            "name": "Conv2d-99",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-100"
+        },
+        {
+            "name": "ReLU-101"
+        },
+        {
+            "name": "Conv2d-102",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-103"
+        },
+        {
+            "name": "ReLU-104"
+        },
+        {
+            "name": "Conv2d-105",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-106"
+        },
+        {
+            "name": "ReLU-107"
+        },
+        {
+            "name": "Bottleneck-108",
+            "stride": 1
+        },
+        {
+            "name": "AdaptiveAvgPool2d-109"
+        },
+        {
+            "name": "Linear-110"
+        },
+        {
+            "name": "ResNet-111"
+        }
+    ]
 }

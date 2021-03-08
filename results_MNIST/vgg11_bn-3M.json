@@ -10,17 +10,38 @@
     "num epochs": 100,
     "num layers": 10,
     "num params": 17027082,
-    "MaxPool2d-1": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "AdaptiveAvgPool2d-2": {},
-    "Linear-3": {},
-    "ReLU-4": {},
-    "Dropout-5": {},
-    "Linear-6": {},
-    "ReLU-7": {},
-    "Dropout-8": {},
-    "Linear-9": {},
-    "VGG-10": {}
+    "layers": [
+        {
+            "name": "MaxPool2d-1",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "AdaptiveAvgPool2d-2"
+        },
+        {
+            "name": "Linear-3"
+        },
+        {
+            "name": "ReLU-4"
+        },
+        {
+            "name": "Dropout-5"
+        },
+        {
+            "name": "Linear-6"
+        },
+        {
+            "name": "ReLU-7"
+        },
+        {
+            "name": "Dropout-8"
+        },
+        {
+            "name": "Linear-9"
+        },
+        {
+            "name": "VGG-10"
+        }
+    ]
 }

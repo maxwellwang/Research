@@ -7,29 +7,43 @@
     "num epochs": 100,
     "num layers": 7,
     "num params": 1290,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "ReLU-2": {},
-    "Dropout-3": {},
-    "Conv2d-4": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-5": {},
-    "AdaptiveAvgPool2d-6": {},
-    "SqueezeNet-7": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "ReLU-2"
+        },
+        {
+            "name": "Dropout-3"
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-5"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-6"
+        },
+        {
+            "name": "SqueezeNet-7"
+        }
+    ]
 }

@@ -7,20 +7,35 @@
     "num epochs": 100,
     "num layers": 7,
     "num params": 1258,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "BasicConv2d-3": {},
-    "AdaptiveAvgPool2d-4": {},
-    "Dropout-5": {},
-    "Linear-6": {},
-    "Inception3-7": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "BasicConv2d-3"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-4"
+        },
+        {
+            "name": "Dropout-5"
+        },
+        {
+            "name": "Linear-6"
+        },
+        {
+            "name": "Inception3-7"
+        }
+    ]
 }

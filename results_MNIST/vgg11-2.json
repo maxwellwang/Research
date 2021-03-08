@@ -10,95 +10,137 @@
     "num epochs": 3,
     "num layers": 25,
     "num params": 124086538,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-2": {},
-    "MaxPool2d-3": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "Conv2d-4": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-5": {},
-    "MaxPool2d-6": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "Conv2d-7": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-8": {},
-    "Conv2d-9": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-10": {},
-    "MaxPool2d-11": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "Conv2d-12": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-13": {},
-    "Conv2d-14": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-15": {},
-    "MaxPool2d-16": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "AdaptiveAvgPool2d-17": {},
-    "Linear-18": {},
-    "ReLU-19": {},
-    "Dropout-20": {},
-    "Linear-21": {},
-    "ReLU-22": {},
-    "Dropout-23": {},
-    "Linear-24": {},
-    "VGG-25": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-2"
+        },
+        {
+            "name": "MaxPool2d-3",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-5"
+        },
+        {
+            "name": "MaxPool2d-6",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-7",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-8"
+        },
+        {
+            "name": "Conv2d-9",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-10"
+        },
+        {
+            "name": "MaxPool2d-11",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-12",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-13"
+        },
+        {
+            "name": "Conv2d-14",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-15"
+        },
+        {
+            "name": "MaxPool2d-16",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "AdaptiveAvgPool2d-17"
+        },
+        {
+            "name": "Linear-18"
+        },
+        {
+            "name": "ReLU-19"
+        },
+        {
+            "name": "Dropout-20"
+        },
+        {
+            "name": "Linear-21"
+        },
+        {
+            "name": "ReLU-22"
+        },
+        {
+            "name": "Dropout-23"
+        },
+        {
+            "name": "Linear-24"
+        },
+        {
+            "name": "VGG-25"
+        }
+    ]
 }

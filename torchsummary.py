@@ -28,6 +28,8 @@ def summary_string(model, input_size, batch_size=-1, device=torch.device('cpu'),
                 summary[m_key]["kernel_size"] = module.kernel_size
             if hasattr(module, 'stride'):
                 summary[m_key]["stride"] = module.stride
+            if hasattr(module, 'padding'):
+                summary[m_key]["padding"] = module.padding
 
             summary[m_key]["input_shape"] = list(
                 input[0][0].size() if isinstance(input[0], list) else list(input[0].size()))

@@ -10,37 +10,67 @@
     "num epochs": 100,
     "num layers": 15,
     "num params": 29710410,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "ReLU-3": {},
-    "Conv2d-4": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-5": {},
-    "ReLU-6": {},
-    "AdaptiveAvgPool2d-7": {},
-    "Linear-8": {},
-    "ReLU-9": {},
-    "Dropout-10": {},
-    "Linear-11": {},
-    "ReLU-12": {},
-    "Dropout-13": {},
-    "Linear-14": {},
-    "VGG-15": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-5"
+        },
+        {
+            "name": "ReLU-6"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-7"
+        },
+        {
+            "name": "Linear-8"
+        },
+        {
+            "name": "ReLU-9"
+        },
+        {
+            "name": "Dropout-10"
+        },
+        {
+            "name": "Linear-11"
+        },
+        {
+            "name": "ReLU-12"
+        },
+        {
+            "name": "Dropout-13"
+        },
+        {
+            "name": "Linear-14"
+        },
+        {
+            "name": "VGG-15"
+        }
+    ]
 }

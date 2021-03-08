@@ -7,50 +7,80 @@
     "num epochs": 100,
     "num layers": 16,
     "num params": 55348426,
-    "Conv2d-1": {
-        "kernel size": [
-            11,
-            11
-        ],
-        "stride": [
-            4,
-            4
-        ]
-    },
-    "ReLU-2": {},
-    "MaxPool2d-3": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "Conv2d-4": {
-        "kernel size": [
-            5,
-            5
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-5": {},
-    "Conv2d-6": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-7": {},
-    "AdaptiveAvgPool2d-8": {},
-    "Dropout-9": {},
-    "Linear-10": {},
-    "ReLU-11": {},
-    "Dropout-12": {},
-    "Linear-13": {},
-    "ReLU-14": {},
-    "Linear-15": {},
-    "AlexNet-16": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                11,
+                11
+            ],
+            "stride": [
+                4,
+                4
+            ]
+        },
+        {
+            "name": "ReLU-2"
+        },
+        {
+            "name": "MaxPool2d-3",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                5,
+                5
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-5"
+        },
+        {
+            "name": "Conv2d-6",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-7"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-8"
+        },
+        {
+            "name": "Dropout-9"
+        },
+        {
+            "name": "Linear-10"
+        },
+        {
+            "name": "ReLU-11"
+        },
+        {
+            "name": "Dropout-12"
+        },
+        {
+            "name": "Linear-13"
+        },
+        {
+            "name": "ReLU-14"
+        },
+        {
+            "name": "Linear-15"
+        },
+        {
+            "name": "AlexNet-16"
+        }
+    ]
 }

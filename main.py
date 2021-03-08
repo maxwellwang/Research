@@ -114,9 +114,7 @@ def handle_result(result_path, result, net, saved_model_path):
     if os.path.isfile(result_path):
         with open(result_path) as json_file:
             saved_result = json.load(json_file)
-        if result['test accuracy'] > saved_result['test accuracy'] or abs(result['accuracy difference']) < abs(
-                saved_result[
-                    'accuracy difference']):
+        if abs(result['accuracy difference']) < abs(saved_result['accuracy difference']):
             print('Improvement detected, overwriting result and saving new model...')
             with open(result_path, 'w') as outfile:
                 json.dump(result, outfile)
@@ -192,24 +190,35 @@ def run(net, model_name):
         if DATASET == 'MNIST':
             total_layers, total_params, layers_summary = summary(net, (1, 28, 28), device=device)
         elif DATASET == 'CIFAR':
-            total_layers, total_params, layers_summary = summary(net, (3, 224, 224), device=device)
+            total_layers, total_params, layers_summary = summary(net, (3, 32, 32), device=device)
         elif DATASET == 'SVHN':
             total_layers, total_params, layers_summary = summary(net, (3, 32, 32), device=device)
-        result.update({'num layers': total_layers, 'num params': total_params})
+        result.update({'num layers': total_layers, 'num weights': total_params})
+        layers = []
         for key, value in layers_summary.items():
-            layer_info = {}
+            layer = {}
+            layer['name'] = key
+            layer['input shape'] = value['input_shape']
+            layer['output shape'] = value['output_shape']
             if 'kernel_size' in value:
-                layer_info['kernel size'] = value['kernel_size']
+                layer['kernel size'] = value['kernel_size']
             if 'stride' in value:
-                layer_info['stride'] = value['stride']
-            result[key] = layer_info
+                layer['stride'] = value['stride']
+            if 'padding' in value:
+                layer['padding'] = value['padding']
+            if 'trainable' in value:
+                layer['trainable'] = value['trainable']
+            if 'nb_params' in value:
+                layer['num params'] = int(value['nb_params'])
+            layers.append(layer)
+        result['layers'] = layers
 
     # Update results and save model if there was improvement
     handle_result(result_path, result, net, saved_model_path)
 
 
 # remember to change forward implementations too
-''' waiting on googlenet to catch up, then do M
+'''
 v   mnist   cifar   svhn
 0   1       1       1
 1   1       1       1

@@ -7,48 +7,72 @@
     "num epochs": 100,
     "num layers": 14,
     "num params": 14410,
-    "Conv2d-1": {
-        "kernel size": [
-            7,
-            7
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "BasicConv2d-3": {},
-    "MaxPool2d-4": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "Conv2d-5": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-6": {},
-    "BasicConv2d-7": {},
-    "MaxPool2d-8": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "MaxPool2d-9": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "MaxPool2d-10": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "AdaptiveAvgPool2d-11": {},
-    "Dropout-12": {},
-    "Linear-13": {},
-    "GoogLeNet-14": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                7,
+                7
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "BasicConv2d-3"
+        },
+        {
+            "name": "MaxPool2d-4",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-5",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-6"
+        },
+        {
+            "name": "BasicConv2d-7"
+        },
+        {
+            "name": "MaxPool2d-8",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-9",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-10",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "AdaptiveAvgPool2d-11"
+        },
+        {
+            "name": "Dropout-12"
+        },
+        {
+            "name": "Linear-13"
+        },
+        {
+            "name": "GoogLeNet-14"
+        }
+    ]
 }

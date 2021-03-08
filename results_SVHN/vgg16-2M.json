@@ -10,76 +10,113 @@
     "num epochs": 100,
     "num layers": 21,
     "num params": 68761930,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-2": {},
-    "Conv2d-3": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-4": {},
-    "MaxPool2d-5": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "Conv2d-6": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-7": {},
-    "Conv2d-8": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-9": {},
-    "MaxPool2d-10": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "Conv2d-11": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "ReLU-12": {},
-    "AdaptiveAvgPool2d-13": {},
-    "Linear-14": {},
-    "ReLU-15": {},
-    "Dropout-16": {},
-    "Linear-17": {},
-    "ReLU-18": {},
-    "Dropout-19": {},
-    "Linear-20": {},
-    "VGG-21": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-2"
+        },
+        {
+            "name": "Conv2d-3",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-4"
+        },
+        {
+            "name": "MaxPool2d-5",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-6",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-7"
+        },
+        {
+            "name": "Conv2d-8",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-9"
+        },
+        {
+            "name": "MaxPool2d-10",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-11",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-12"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-13"
+        },
+        {
+            "name": "Linear-14"
+        },
+        {
+            "name": "ReLU-15"
+        },
+        {
+            "name": "Dropout-16"
+        },
+        {
+            "name": "Linear-17"
+        },
+        {
+            "name": "ReLU-18"
+        },
+        {
+            "name": "Dropout-19"
+        },
+        {
+            "name": "Linear-20"
+        },
+        {
+            "name": "VGG-21"
+        }
+    ]
 }

@@ -10,29 +10,53 @@
     "num epochs": 100,
     "num layers": 13,
     "num params": 17428490,
-    "MaxPool2d-1": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "MaxPool2d-2": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "MaxPool2d-3": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "MaxPool2d-4": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "AdaptiveAvgPool2d-5": {},
-    "Linear-6": {},
-    "ReLU-7": {},
-    "Dropout-8": {},
-    "Linear-9": {},
-    "ReLU-10": {},
-    "Dropout-11": {},
-    "Linear-12": {},
-    "VGG-13": {}
+    "layers": [
+        {
+            "name": "MaxPool2d-1",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-2",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-3",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-4",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "AdaptiveAvgPool2d-5"
+        },
+        {
+            "name": "Linear-6"
+        },
+        {
+            "name": "ReLU-7"
+        },
+        {
+            "name": "Dropout-8"
+        },
+        {
+            "name": "Linear-9"
+        },
+        {
+            "name": "ReLU-10"
+        },
+        {
+            "name": "Dropout-11"
+        },
+        {
+            "name": "Linear-12"
+        },
+        {
+            "name": "VGG-13"
+        }
+    ]
 }

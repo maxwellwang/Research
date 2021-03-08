@@ -10,13 +10,33 @@
     "num epochs": 100,
     "num layers": 9,
     "num params": 17027082,
-    "AdaptiveAvgPool2d-1": {},
-    "Linear-2": {},
-    "ReLU-3": {},
-    "Dropout-4": {},
-    "Linear-5": {},
-    "ReLU-6": {},
-    "Dropout-7": {},
-    "Linear-8": {},
-    "VGG-9": {}
+    "layers": [
+        {
+            "name": "AdaptiveAvgPool2d-1"
+        },
+        {
+            "name": "Linear-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "Dropout-4"
+        },
+        {
+            "name": "Linear-5"
+        },
+        {
+            "name": "ReLU-6"
+        },
+        {
+            "name": "Dropout-7"
+        },
+        {
+            "name": "Linear-8"
+        },
+        {
+            "name": "VGG-9"
+        }
+    ]
 }

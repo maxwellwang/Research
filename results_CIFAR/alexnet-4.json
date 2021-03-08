@@ -7,28 +7,52 @@
     "num epochs": 100,
     "num layers": 12,
     "num params": 26286858,
-    "Conv2d-1": {
-        "kernel size": [
-            11,
-            11
-        ],
-        "stride": [
-            4,
-            4
-        ]
-    },
-    "ReLU-2": {},
-    "MaxPool2d-3": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "AdaptiveAvgPool2d-4": {},
-    "Dropout-5": {},
-    "Linear-6": {},
-    "ReLU-7": {},
-    "Dropout-8": {},
-    "Linear-9": {},
-    "ReLU-10": {},
-    "Linear-11": {},
-    "AlexNet-12": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                11,
+                11
+            ],
+            "stride": [
+                4,
+                4
+            ]
+        },
+        {
+            "name": "ReLU-2"
+        },
+        {
+            "name": "MaxPool2d-3",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "AdaptiveAvgPool2d-4"
+        },
+        {
+            "name": "Dropout-5"
+        },
+        {
+            "name": "Linear-6"
+        },
+        {
+            "name": "ReLU-7"
+        },
+        {
+            "name": "Dropout-8"
+        },
+        {
+            "name": "Linear-9"
+        },
+        {
+            "name": "ReLU-10"
+        },
+        {
+            "name": "Linear-11"
+        },
+        {
+            "name": "AlexNet-12"
+        }
+    ]
 }

@@ -10,45 +10,77 @@
     "num epochs": 100,
     "num layers": 17,
     "num params": 29710410,
-    "Conv2d-1": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "ReLU-3": {},
-    "Conv2d-4": {
-        "kernel size": [
-            3,
-            3
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-5": {},
-    "ReLU-6": {},
-    "MaxPool2d-7": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "MaxPool2d-8": {
-        "kernel size": 2,
-        "stride": 2
-    },
-    "AdaptiveAvgPool2d-9": {},
-    "Linear-10": {},
-    "ReLU-11": {},
-    "Dropout-12": {},
-    "Linear-13": {},
-    "ReLU-14": {},
-    "Dropout-15": {},
-    "Linear-16": {},
-    "VGG-17": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-5"
+        },
+        {
+            "name": "ReLU-6"
+        },
+        {
+            "name": "MaxPool2d-7",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "MaxPool2d-8",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "AdaptiveAvgPool2d-9"
+        },
+        {
+            "name": "Linear-10"
+        },
+        {
+            "name": "ReLU-11"
+        },
+        {
+            "name": "Dropout-12"
+        },
+        {
+            "name": "Linear-13"
+        },
+        {
+            "name": "ReLU-14"
+        },
+        {
+            "name": "Dropout-15"
+        },
+        {
+            "name": "Linear-16"
+        },
+        {
+            "name": "VGG-17"
+        }
+    ]
 }

@@ -7,36 +7,57 @@
     "num epochs": 100,
     "num layers": 11,
     "num params": 8138,
-    "Conv2d-1": {
-        "kernel size": [
-            7,
-            7
-        ],
-        "stride": [
-            2,
-            2
-        ]
-    },
-    "BatchNorm2d-2": {},
-    "BasicConv2d-3": {},
-    "MaxPool2d-4": {
-        "kernel size": 3,
-        "stride": 2
-    },
-    "Conv2d-5": {
-        "kernel size": [
-            1,
-            1
-        ],
-        "stride": [
-            1,
-            1
-        ]
-    },
-    "BatchNorm2d-6": {},
-    "BasicConv2d-7": {},
-    "AdaptiveAvgPool2d-8": {},
-    "Dropout-9": {},
-    "Linear-10": {},
-    "GoogLeNet-11": {}
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                7,
+                7
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "BasicConv2d-3"
+        },
+        {
+            "name": "MaxPool2d-4",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-5",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-6"
+        },
+        {
+            "name": "BasicConv2d-7"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-8"
+        },
+        {
+            "name": "Dropout-9"
+        },
+        {
+            "name": "Linear-10"
+        },
+        {
+            "name": "GoogLeNet-11"
+        }
+    ]
 }
