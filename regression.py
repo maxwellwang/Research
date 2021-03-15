@@ -10,17 +10,21 @@ def flatten_net(params):
     for layer in params['layers']:
         if len(layer.keys()) > 1:
             if "kernel size" in layer.keys():
+                prod = 1
                 if isinstance(layer["kernel size"], list):
                     for i in layer["kernel size"]:
-                        ret.append(i)
+                        prod *= i
                 else:
-                    ret.append(layer["kernel size"])
+                    prod *= layer["kernel size"]
+                ret.append(prod)
             if "stride" in layer.keys():
+                prod = 1
                 if isinstance(layer["stride"], list):
                     for i in layer["stride"]:
-                        ret.append(i)
+                        prod *= i
                 else:
-                    ret.append(layer["stride"])
+                    prod *= layer["stride"]
+                ret.append(prod)
     return ret
 
 
@@ -65,7 +69,7 @@ def get_data():
 
 X, y = get_data()
 
-# X = PolynomialFeatures(2).fit_transform(X)
+X = PolynomialFeatures(2).fit_transform(X)
 model = LinearRegression()
 model.fit(X, y)
 
