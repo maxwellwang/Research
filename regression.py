@@ -1,6 +1,5 @@
 import os
 import json
-
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPRegressor
 import matplotlib.pyplot as plt
@@ -66,7 +65,6 @@ def get_data(dataset):
     for x in a_X:
         while len(x) < max_len:
             x.append(0)
-    #a_X = PCA(n_components=2).fit_transform(a_X)
     return a_X, a_y
 
 
@@ -76,8 +74,9 @@ for dataset in ['MNIST', 'CIFAR', 'SVHN', 'FMNIST', 'GTSRB']:
     regr = MLPRegressor(random_state=3, max_iter=10000).fit(X_train, y_train)
     print(dataset, 'Train R2:', round(regr.score(X_train, y_train), 2))
     print(dataset, 'Test R2:', round(regr.score(X_test, y_test), 2))
-    plt.scatter(regr.predict(X_test), y_test)
-    plt.xlabel('Predictions')
-    plt.ylabel('True Values')
-    plt.title(dataset)
-    plt.show()
+    # plt.scatter(regr.predict(X_test), y_test)
+    # plt.xlabel('Predictions')
+    # plt.ylabel('True Values')
+    # plt.title(dataset)
+    # plt.savefig(dataset + '.png')
+    # plt.show()
