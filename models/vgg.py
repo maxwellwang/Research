@@ -23,12 +23,14 @@ model_urls = {
 class VGG(nn.Module):
 
     def __init__(
-            self,
+            self, dataset,
             features: nn.Module, cfg, batch_norm,
             num_classes: int = 10,
             init_weights: bool = True
     ) -> None:
         super(VGG, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
         self.function_params = {"cfg": cfg, "batch norm": batch_norm}
         self.features = features
         self.avgpool = nn.AdaptiveAvgPool2d((7, 7))
@@ -67,7 +69,7 @@ class VGG(nn.Module):
 
 def make_layers(dataset, cfg: List[Union[str, int]], batch_norm: bool = False) -> nn.Sequential:
     layers: List[nn.Module] = []
-    in_channels = 1 if dataset == 'MNIST' else 3
+    in_channels = 1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3
     for v in cfg:
         if v == 'M':
             layers += [nn.MaxPool2d(kernel_size=2, stride=2)]
@@ -93,7 +95,7 @@ cfgs: Dict[str, List[Union[str, int]]] = {
 def _vgg(dataset, arch: str, cfg: str, batch_norm: bool, pretrained: bool, progress: bool, **kwargs: Any) -> VGG:
     if pretrained:
         kwargs['init_weights'] = False
-    model = VGG(make_layers(dataset, cfgs[cfg], batch_norm=batch_norm), cfg, batch_norm, **kwargs)
+    model = VGG(dataset, make_layers(dataset, cfgs[cfg], batch_norm=batch_norm), cfg, batch_norm, **kwargs)
     if pretrained:
         state_dict = load_state_dict_from_url(model_urls[arch],
                                               progress=progress)

@@ -15,12 +15,13 @@ import os.path
 import json
 import math
 from models import *
+import gtsrb_dataset as dataset
 
 # set constants
 if len(sys.argv) < 2:
     print('Error: please enter dataset argument')
     exit(1)
-DATASET = sys.argv[1]  # options are [MNIST, CIFAR, SVHN]
+DATASET = sys.argv[1]  # options are [MNIST, CIFAR, SVHN, FMNIST, GTSRB]
 BATCH_SIZE_TRAIN = 128
 BATCH_SIZE_TEST = 100
 transform_mnist = transforms.Compose([
@@ -36,6 +37,12 @@ transform_train = transforms.Compose([
 transform_test = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+])
+transform_gtsrb = transforms.Compose([
+    transforms.Resize((32, 32)),
+    transforms.ToTensor(),
+    transforms.Normalize((0.3403, 0.3121, 0.3214),
+                         (0.2724, 0.2608, 0.2669))
 ])
 LEARNING_RATE = .1
 MOMENTUM = .9
@@ -54,6 +61,12 @@ def prep_loaders():
     elif DATASET == 'SVHN':
         train_set = torchvision.datasets.SVHN(root='.', split='train', download=False, transform=transform_train)
         test_set = torchvision.datasets.SVHN(root='.', split='test', download=False, transform=transform_test)
+    elif DATASET == 'FMNIST':
+        train_set = torchvision.datasets.FashionMNIST(root='.', train=True, download=False, transform=transform_mnist)
+        test_set = torchvision.datasets.FashionMNIST(root='.', train=False, download=False, transform=transform_mnist)
+    elif DATASET == 'GTSRB':
+        train_set = dataset.GTSRB(root_dir='.', train=True, transform=transform_gtsrb)
+        test_set = dataset.GTSRB(root_dir='.', train=False, transform=transform_gtsrb)
 
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=BATCH_SIZE_TRAIN, shuffle=True, num_workers=2)
     test_loader = torch.utils.data.DataLoader(test_set, batch_size=BATCH_SIZE_TEST, shuffle=False, num_workers=2)
@@ -111,27 +124,19 @@ def test(net, device, test_loader, criterion, epoch, model_name):
 
 
 def handle_result(result_path, result, net, saved_model_path):
-    if os.path.isfile(result_path):
-        with open(result_path) as json_file:
-            saved_result = json.load(json_file)
-        if abs(result['accuracy difference']) < abs(saved_result['accuracy difference']):
-            print('Improvement detected, overwriting result and saving new model...')
-            with open(result_path, 'w') as outfile:
-                json.dump(result, outfile)
-            torch.save(net.module.state_dict(), saved_model_path)
-        else:
-            print('No improvement detected')
-    else:
-        print('Writing first result and saving first model...')
-        with open(result_path, 'w') as outfile:
-            json.dump(result, outfile)
-        torch.save(net.state_dict(), saved_model_path)
+    print('Saving first model...')
+    with open(result_path, 'w') as outfile:
+        json.dump(result, outfile, indent=4)
+    torch.save(net.state_dict(), saved_model_path)
     print('Result: ' + str(result))
 
 
 def run(net, model_name):
     saved_model_path = './saved_models_' + DATASET + '/{}.pt'.format(model_name)
     result_path = './results_' + DATASET + '/{}.json'.format(model_name)
+    if os.path.isfile(result_path):
+        print(model_name + ' already done')
+        return
 
     # Prepare result model name and function params
     function_params = {}
@@ -142,20 +147,7 @@ def run(net, model_name):
     # Prepare data and network
     print('Running {} on {}...'.format(model_name, DATASET))
     num_epochs = 0
-    if os.path.isfile(result_path):
-        with open(result_path) as json_file:
-            saved_result = json.load(json_file)
-            num_epochs = saved_result['num epochs']
-            if saved_result['train accuracy'] >= TRAIN_ACCURACY_QUOTA:
-                print('Train accuracy exceeded {}%, no need to train'.format(TRAIN_ACCURACY_QUOTA))
-                return
-            if saved_result['num epochs'] >= EPOCHS:
-                print('Num epochs exceeded {}, no need to train...'.format(EPOCHS))
-                return
     train_loader, test_loader = prep_loaders()
-    if os.path.isfile(saved_model_path):
-        print('Loading saved model...')
-        net.load_state_dict(torch.load(saved_model_path))
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     if device != 'cuda':
         print('Error: CUDA not working')
@@ -183,35 +175,31 @@ def run(net, model_name):
 
     # Record num epochs and network info after moving to device
     result.update({'num epochs': num_epochs})
-    if not os.path.isfile(result_path):
-        # first time running model, record architecture info
-        net.eval()
-        total_layers, total_params, layers_summary = 0, 0, {}
-        if DATASET == 'MNIST':
-            total_layers, total_params, layers_summary = summary(net, (1, 28, 28), device=device)
-        elif DATASET == 'CIFAR':
-            total_layers, total_params, layers_summary = summary(net, (3, 32, 32), device=device)
-        elif DATASET == 'SVHN':
-            total_layers, total_params, layers_summary = summary(net, (3, 32, 32), device=device)
-        result.update({'num layers': total_layers, 'num weights': total_params})
-        layers = []
-        for key, value in layers_summary.items():
-            layer = {}
-            layer['name'] = key
-            layer['input shape'] = value['input_shape']
-            layer['output shape'] = value['output_shape']
-            if 'kernel_size' in value:
-                layer['kernel size'] = value['kernel_size']
-            if 'stride' in value:
-                layer['stride'] = value['stride']
-            if 'padding' in value:
-                layer['padding'] = value['padding']
-            if 'trainable' in value:
-                layer['trainable'] = value['trainable']
-            if 'nb_params' in value:
-                layer['num params'] = int(value['nb_params'])
-            layers.append(layer)
-        result['layers'] = layers
+    net.eval()
+    total_layers, total_params, layers_summary = 0, 0, {}
+    input_size = (0, 0, 0)
+    if DATASET == 'MNIST':
+        input_size = (1, 28, 28)
+    elif DATASET == 'CIFAR':
+        input_size = (3, 32, 32)
+    elif DATASET == 'SVHN':
+        input_size = (3, 32, 32)
+    elif DATASET == 'FMNIST':
+        input_size = (1, 28, 28)
+    elif DATASET == 'GTSRB':
+        input_size = (3, 32, 32)
+    total_layers, total_params, layers_summary = summary(net, input_size, device=device)
+    result.update({'num layers': total_layers, 'num params': total_params})
+    layers = []
+    for key, value in layers_summary.items():
+        layer = {}
+        layer['name'] = key
+        if 'kernel_size' in value:
+            layer['kernel size'] = value['kernel_size']
+        if 'stride' in value:
+            layer['stride'] = value['stride']
+        layers.append(layer)
+    result['layers'] = layers
 
     # Update results and save model if there was improvement
     handle_result(result_path, result, net, saved_model_path)
@@ -219,8 +207,8 @@ def run(net, model_name):
 
 # remember to change forward implementations too
 '''
-v   mnist   cifar   svhn
-0   1       1       1
+v   mnist   cifar   svhn    fmnist  german
+0   1       1       1       1       1
 1   1       1       1
 2   1       1       1
 3   1       1       1
@@ -239,13 +227,13 @@ v   mnist   cifar   svhn
 3M  1       1       1
 4M  1       1       1
 '''
-version = '-4M'
+version = ''
 # run(alexnet(DATASET), 'alexnet' + version)  # change conv in self.features
 # run(densenet121(DATASET), 'densenet121' + version)  # change end condition for block_config loop
 # run(densenet161(DATASET), 'densenet161' + version)
 # run(densenet169(DATASET), 'densenet169' + version)
 # run(densenet201(DATASET), 'densenet201' + version)
-run(googlenet(DATASET), 'googlenet' + version)  # change inception blocks
+# run(googlenet(DATASET), 'googlenet' + version)  # change inception blocks
 # run(inception_v3(DATASET), 'inception_v3' + version)  # change inception layers
 # run(mnasnet0_5(DATASET), 'mnasnet0_5' + version)  # change mnas stacks
 # run(mnasnet0_75(DATASET), 'mnasnet0_75' + version)
@@ -267,16 +255,16 @@ run(googlenet(DATASET), 'googlenet' + version)  # change inception blocks
 # run(shufflenet_v2_x2_0(DATASET), 'shufflenet_v2_x2_0' + version)
 # run(squeezenet1_0(DATASET), 'squeezenet1_0' + version)  # change Fire layers
 # run(squeezenet1_1(DATASET), 'squeezenet1_1' + version)
-run(vgg11(DATASET), 'vgg11' + version)  # change cfgs lists
-run(vgg11_bn(DATASET), 'vgg11_bn' + version)
-run(vgg13(DATASET), 'vgg13' + version)
-run(vgg13_bn(DATASET), 'vgg13_bn' + version)
-run(vgg16(DATASET), 'vgg16' + version)
-run(vgg16_bn(DATASET), 'vgg16_bn' + version)
-run(vgg19(DATASET), 'vgg19' + version)
-run(vgg19_bn(DATASET), 'vgg19_bn' + version)
+# run(vgg11(DATASET), 'vgg11' + version)  # change cfgs lists
+# run(vgg11_bn(DATASET), 'vgg11_bn' + version)
+# run(vgg13(DATASET), 'vgg13' + version)
+# run(vgg13_bn(DATASET), 'vgg13_bn' + version)
+# run(vgg16(DATASET), 'vgg16' + version)
+# run(vgg16_bn(DATASET), 'vgg16_bn' + version)
+# run(vgg19(DATASET), 'vgg19' + version)
+# run(vgg19_bn(DATASET), 'vgg19_bn' + version)
 
-directories = []
+directories = ['./params/densenet/', './params/resnet/', './params/shufflenetv2/']
 for directory in directories:
     for filename in os.listdir(directory):
         with open(directory + filename) as json_file:

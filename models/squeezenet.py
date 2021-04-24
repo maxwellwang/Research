@@ -48,11 +48,13 @@ class SqueezeNet(nn.Module):
             num_classes: int = 10
     ) -> None:
         super(SqueezeNet, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
         self.function_params = None
         self.num_classes = num_classes
         if version == '1_0':
             self.features = nn.Sequential(
-                nn.Conv2d(1 if dataset == 'MNIST' else 3, 96, kernel_size=7, stride=2),
+                nn.Conv2d(1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3, 96, kernel_size=7, stride=2),
                 nn.ReLU(inplace=True),
                 nn.MaxPool2d(kernel_size=3, stride=2, ceil_mode=True),
                 Fire(96, 16, 64, 64),
@@ -68,7 +70,7 @@ class SqueezeNet(nn.Module):
             )
         elif version == '1_1':
             self.features = nn.Sequential(
-                nn.Conv2d(1 if dataset == 'MNIST' else 3, 64, kernel_size=3, stride=2),
+                nn.Conv2d(1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3, 64, kernel_size=3, stride=2),
                 nn.ReLU(inplace=True),
                 nn.MaxPool2d(kernel_size=3, stride=2, ceil_mode=True),
                 Fire(64, 16, 64, 64),

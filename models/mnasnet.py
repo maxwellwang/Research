@@ -111,6 +111,8 @@ class MNASNet(torch.nn.Module):
             dropout: float = 0.2
     ) -> None:
         super(MNASNet, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
         self.function_params = {"alpha": alpha}
         assert alpha > 0.0
         self.alpha = alpha
@@ -118,7 +120,7 @@ class MNASNet(torch.nn.Module):
         depths = _get_depths(alpha)
         layers = [
             # First layer: regular conv.
-            nn.Conv2d(1 if dataset == 'MNIST' else 3, depths[0], 3, padding=1, stride=2, bias=False),
+            nn.Conv2d(1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3, depths[0], 3, padding=1, stride=2, bias=False),
             nn.BatchNorm2d(depths[0], momentum=_BN_MOMENTUM),
             nn.ReLU(inplace=True),
             # Depthwise separable, no skip.

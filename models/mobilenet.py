@@ -113,6 +113,8 @@ class MobileNetV2(nn.Module):
 
         """
         super(MobileNetV2, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
 
         self.function_params = None
 
@@ -146,7 +148,7 @@ class MobileNetV2(nn.Module):
         input_channel = _make_divisible(input_channel * width_mult, round_nearest)
         self.last_channel = _make_divisible(last_channel * max(1.0, width_mult), round_nearest)
         features: List[nn.Module] = [
-            ConvBNReLU(1 if dataset == 'MNIST' else 3, input_channel, stride=2, norm_layer=norm_layer)]
+            ConvBNReLU(1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3, input_channel, stride=2, norm_layer=norm_layer)]
         # building inverted residual blocks
         for t, c, n, s in inverted_residual_setting:
             output_channel = _make_divisible(c * width_mult, round_nearest)

@@ -166,13 +166,15 @@ class DenseNet(nn.Module):
     ) -> None:
 
         super(DenseNet, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
 
         self.function_params = {"growth rate": growth_rate, "block config": block_config,
                                 "num init features": num_init_features}
 
         # First convolution
         self.features = nn.Sequential(OrderedDict([
-            ('conv0', nn.Conv2d(1 if dataset == 'MNIST' else 3, num_init_features, kernel_size=7, stride=2,
+            ('conv0', nn.Conv2d(1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3, num_init_features, kernel_size=7, stride=2,
                                 padding=3, bias=False)),
             ('norm0', nn.BatchNorm2d(num_init_features)),
             ('relu0', nn.ReLU(inplace=True)),

@@ -1,0 +1,3751 @@
+{
+    "model": "custom_densenet11",
+    "function params": {
+        "growth rate": 48,
+        "block config": [
+            6,
+            12,
+            48,
+            32
+        ],
+        "num init features": 96
+    },
+    "train accuracy": 99.008,
+    "test accuracy": 88.71,
+    "accuracy difference": 10.298,
+    "num epochs": 18,
+    "num layers": 708,
+    "num params": 40549642,
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                7,
+                7
+            ],
+            "stride": [
+                2,
+                2
+            ]
+        },
+        {
+            "name": "BatchNorm2d-2"
+        },
+        {
+            "name": "ReLU-3"
+        },
+        {
+            "name": "BatchNorm2d-4"
+        },
+        {
+            "name": "ReLU-5"
+        },
+        {
+            "name": "Conv2d-6",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-7"
+        },
+        {
+            "name": "ReLU-8"
+        },
+        {
+            "name": "Conv2d-9",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-10"
+        },
+        {
+            "name": "BatchNorm2d-11"
+        },
+        {
+            "name": "ReLU-12"
+        },
+        {
+            "name": "Conv2d-13",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-14"
+        },
+        {
+            "name": "ReLU-15"
+        },
+        {
+            "name": "Conv2d-16",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-17"
+        },
+        {
+            "name": "BatchNorm2d-18"
+        },
+        {
+            "name": "ReLU-19"
+        },
+        {
+            "name": "Conv2d-20",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-21"
+        },
+        {
+            "name": "ReLU-22"
+        },
+        {
+            "name": "Conv2d-23",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-24"
+        },
+        {
+            "name": "BatchNorm2d-25"
+        },
+        {
+            "name": "ReLU-26"
+        },
+        {
+            "name": "Conv2d-27",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-28"
+        },
+        {
+            "name": "ReLU-29"
+        },
+        {
+            "name": "Conv2d-30",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-31"
+        },
+        {
+            "name": "BatchNorm2d-32"
+        },
+        {
+            "name": "ReLU-33"
+        },
+        {
+            "name": "Conv2d-34",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-35"
+        },
+        {
+            "name": "ReLU-36"
+        },
+        {
+            "name": "Conv2d-37",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-38"
+        },
+        {
+            "name": "BatchNorm2d-39"
+        },
+        {
+            "name": "ReLU-40"
+        },
+        {
+            "name": "Conv2d-41",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-42"
+        },
+        {
+            "name": "ReLU-43"
+        },
+        {
+            "name": "Conv2d-44",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-45"
+        },
+        {
+            "name": "_DenseBlock-46"
+        },
+        {
+            "name": "BatchNorm2d-47"
+        },
+        {
+            "name": "ReLU-48"
+        },
+        {
+            "name": "Conv2d-49",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "AvgPool2d-50",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "BatchNorm2d-51"
+        },
+        {
+            "name": "ReLU-52"
+        },
+        {
+            "name": "Conv2d-53",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-54"
+        },
+        {
+            "name": "ReLU-55"
+        },
+        {
+            "name": "Conv2d-56",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-57"
+        },
+        {
+            "name": "BatchNorm2d-58"
+        },
+        {
+            "name": "ReLU-59"
+        },
+        {
+            "name": "Conv2d-60",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-61"
+        },
+        {
+            "name": "ReLU-62"
+        },
+        {
+            "name": "Conv2d-63",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-64"
+        },
+        {
+            "name": "BatchNorm2d-65"
+        },
+        {
+            "name": "ReLU-66"
+        },
+        {
+            "name": "Conv2d-67",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-68"
+        },
+        {
+            "name": "ReLU-69"
+        },
+        {
+            "name": "Conv2d-70",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-71"
+        },
+        {
+            "name": "BatchNorm2d-72"
+        },
+        {
+            "name": "ReLU-73"
+        },
+        {
+            "name": "Conv2d-74",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-75"
+        },
+        {
+            "name": "ReLU-76"
+        },
+        {
+            "name": "Conv2d-77",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-78"
+        },
+        {
+            "name": "BatchNorm2d-79"
+        },
+        {
+            "name": "ReLU-80"
+        },
+        {
+            "name": "Conv2d-81",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-82"
+        },
+        {
+            "name": "ReLU-83"
+        },
+        {
+            "name": "Conv2d-84",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-85"
+        },
+        {
+            "name": "BatchNorm2d-86"
+        },
+        {
+            "name": "ReLU-87"
+        },
+        {
+            "name": "Conv2d-88",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-89"
+        },
+        {
+            "name": "ReLU-90"
+        },
+        {
+            "name": "Conv2d-91",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-92"
+        },
+        {
+            "name": "BatchNorm2d-93"
+        },
+        {
+            "name": "ReLU-94"
+        },
+        {
+            "name": "Conv2d-95",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-96"
+        },
+        {
+            "name": "ReLU-97"
+        },
+        {
+            "name": "Conv2d-98",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-99"
+        },
+        {
+            "name": "BatchNorm2d-100"
+        },
+        {
+            "name": "ReLU-101"
+        },
+        {
+            "name": "Conv2d-102",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-103"
+        },
+        {
+            "name": "ReLU-104"
+        },
+        {
+            "name": "Conv2d-105",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-106"
+        },
+        {
+            "name": "BatchNorm2d-107"
+        },
+        {
+            "name": "ReLU-108"
+        },
+        {
+            "name": "Conv2d-109",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-110"
+        },
+        {
+            "name": "ReLU-111"
+        },
+        {
+            "name": "Conv2d-112",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-113"
+        },
+        {
+            "name": "BatchNorm2d-114"
+        },
+        {
+            "name": "ReLU-115"
+        },
+        {
+            "name": "Conv2d-116",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-117"
+        },
+        {
+            "name": "ReLU-118"
+        },
+        {
+            "name": "Conv2d-119",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-120"
+        },
+        {
+            "name": "BatchNorm2d-121"
+        },
+        {
+            "name": "ReLU-122"
+        },
+        {
+            "name": "Conv2d-123",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-124"
+        },
+        {
+            "name": "ReLU-125"
+        },
+        {
+            "name": "Conv2d-126",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-127"
+        },
+        {
+            "name": "BatchNorm2d-128"
+        },
+        {
+            "name": "ReLU-129"
+        },
+        {
+            "name": "Conv2d-130",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-131"
+        },
+        {
+            "name": "ReLU-132"
+        },
+        {
+            "name": "Conv2d-133",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-134"
+        },
+        {
+            "name": "_DenseBlock-135"
+        },
+        {
+            "name": "BatchNorm2d-136"
+        },
+        {
+            "name": "ReLU-137"
+        },
+        {
+            "name": "Conv2d-138",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "AvgPool2d-139",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "BatchNorm2d-140"
+        },
+        {
+            "name": "ReLU-141"
+        },
+        {
+            "name": "Conv2d-142",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-143"
+        },
+        {
+            "name": "ReLU-144"
+        },
+        {
+            "name": "Conv2d-145",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-146"
+        },
+        {
+            "name": "BatchNorm2d-147"
+        },
+        {
+            "name": "ReLU-148"
+        },
+        {
+            "name": "Conv2d-149",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-150"
+        },
+        {
+            "name": "ReLU-151"
+        },
+        {
+            "name": "Conv2d-152",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-153"
+        },
+        {
+            "name": "BatchNorm2d-154"
+        },
+        {
+            "name": "ReLU-155"
+        },
+        {
+            "name": "Conv2d-156",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-157"
+        },
+        {
+            "name": "ReLU-158"
+        },
+        {
+            "name": "Conv2d-159",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-160"
+        },
+        {
+            "name": "BatchNorm2d-161"
+        },
+        {
+            "name": "ReLU-162"
+        },
+        {
+            "name": "Conv2d-163",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-164"
+        },
+        {
+            "name": "ReLU-165"
+        },
+        {
+            "name": "Conv2d-166",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-167"
+        },
+        {
+            "name": "BatchNorm2d-168"
+        },
+        {
+            "name": "ReLU-169"
+        },
+        {
+            "name": "Conv2d-170",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-171"
+        },
+        {
+            "name": "ReLU-172"
+        },
+        {
+            "name": "Conv2d-173",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-174"
+        },
+        {
+            "name": "BatchNorm2d-175"
+        },
+        {
+            "name": "ReLU-176"
+        },
+        {
+            "name": "Conv2d-177",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-178"
+        },
+        {
+            "name": "ReLU-179"
+        },
+        {
+            "name": "Conv2d-180",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-181"
+        },
+        {
+            "name": "BatchNorm2d-182"
+        },
+        {
+            "name": "ReLU-183"
+        },
+        {
+            "name": "Conv2d-184",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-185"
+        },
+        {
+            "name": "ReLU-186"
+        },
+        {
+            "name": "Conv2d-187",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-188"
+        },
+        {
+            "name": "BatchNorm2d-189"
+        },
+        {
+            "name": "ReLU-190"
+        },
+        {
+            "name": "Conv2d-191",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-192"
+        },
+        {
+            "name": "ReLU-193"
+        },
+        {
+            "name": "Conv2d-194",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-195"
+        },
+        {
+            "name": "BatchNorm2d-196"
+        },
+        {
+            "name": "ReLU-197"
+        },
+        {
+            "name": "Conv2d-198",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-199"
+        },
+        {
+            "name": "ReLU-200"
+        },
+        {
+            "name": "Conv2d-201",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-202"
+        },
+        {
+            "name": "BatchNorm2d-203"
+        },
+        {
+            "name": "ReLU-204"
+        },
+        {
+            "name": "Conv2d-205",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-206"
+        },
+        {
+            "name": "ReLU-207"
+        },
+        {
+            "name": "Conv2d-208",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-209"
+        },
+        {
+            "name": "BatchNorm2d-210"
+        },
+        {
+            "name": "ReLU-211"
+        },
+        {
+            "name": "Conv2d-212",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-213"
+        },
+        {
+            "name": "ReLU-214"
+        },
+        {
+            "name": "Conv2d-215",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-216"
+        },
+        {
+            "name": "BatchNorm2d-217"
+        },
+        {
+            "name": "ReLU-218"
+        },
+        {
+            "name": "Conv2d-219",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-220"
+        },
+        {
+            "name": "ReLU-221"
+        },
+        {
+            "name": "Conv2d-222",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-223"
+        },
+        {
+            "name": "BatchNorm2d-224"
+        },
+        {
+            "name": "ReLU-225"
+        },
+        {
+            "name": "Conv2d-226",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-227"
+        },
+        {
+            "name": "ReLU-228"
+        },
+        {
+            "name": "Conv2d-229",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-230"
+        },
+        {
+            "name": "BatchNorm2d-231"
+        },
+        {
+            "name": "ReLU-232"
+        },
+        {
+            "name": "Conv2d-233",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-234"
+        },
+        {
+            "name": "ReLU-235"
+        },
+        {
+            "name": "Conv2d-236",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-237"
+        },
+        {
+            "name": "BatchNorm2d-238"
+        },
+        {
+            "name": "ReLU-239"
+        },
+        {
+            "name": "Conv2d-240",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-241"
+        },
+        {
+            "name": "ReLU-242"
+        },
+        {
+            "name": "Conv2d-243",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-244"
+        },
+        {
+            "name": "BatchNorm2d-245"
+        },
+        {
+            "name": "ReLU-246"
+        },
+        {
+            "name": "Conv2d-247",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-248"
+        },
+        {
+            "name": "ReLU-249"
+        },
+        {
+            "name": "Conv2d-250",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-251"
+        },
+        {
+            "name": "BatchNorm2d-252"
+        },
+        {
+            "name": "ReLU-253"
+        },
+        {
+            "name": "Conv2d-254",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-255"
+        },
+        {
+            "name": "ReLU-256"
+        },
+        {
+            "name": "Conv2d-257",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-258"
+        },
+        {
+            "name": "BatchNorm2d-259"
+        },
+        {
+            "name": "ReLU-260"
+        },
+        {
+            "name": "Conv2d-261",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-262"
+        },
+        {
+            "name": "ReLU-263"
+        },
+        {
+            "name": "Conv2d-264",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-265"
+        },
+        {
+            "name": "BatchNorm2d-266"
+        },
+        {
+            "name": "ReLU-267"
+        },
+        {
+            "name": "Conv2d-268",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-269"
+        },
+        {
+            "name": "ReLU-270"
+        },
+        {
+            "name": "Conv2d-271",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-272"
+        },
+        {
+            "name": "BatchNorm2d-273"
+        },
+        {
+            "name": "ReLU-274"
+        },
+        {
+            "name": "Conv2d-275",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-276"
+        },
+        {
+            "name": "ReLU-277"
+        },
+        {
+            "name": "Conv2d-278",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-279"
+        },
+        {
+            "name": "BatchNorm2d-280"
+        },
+        {
+            "name": "ReLU-281"
+        },
+        {
+            "name": "Conv2d-282",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-283"
+        },
+        {
+            "name": "ReLU-284"
+        },
+        {
+            "name": "Conv2d-285",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-286"
+        },
+        {
+            "name": "BatchNorm2d-287"
+        },
+        {
+            "name": "ReLU-288"
+        },
+        {
+            "name": "Conv2d-289",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-290"
+        },
+        {
+            "name": "ReLU-291"
+        },
+        {
+            "name": "Conv2d-292",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-293"
+        },
+        {
+            "name": "BatchNorm2d-294"
+        },
+        {
+            "name": "ReLU-295"
+        },
+        {
+            "name": "Conv2d-296",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-297"
+        },
+        {
+            "name": "ReLU-298"
+        },
+        {
+            "name": "Conv2d-299",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-300"
+        },
+        {
+            "name": "BatchNorm2d-301"
+        },
+        {
+            "name": "ReLU-302"
+        },
+        {
+            "name": "Conv2d-303",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-304"
+        },
+        {
+            "name": "ReLU-305"
+        },
+        {
+            "name": "Conv2d-306",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-307"
+        },
+        {
+            "name": "BatchNorm2d-308"
+        },
+        {
+            "name": "ReLU-309"
+        },
+        {
+            "name": "Conv2d-310",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-311"
+        },
+        {
+            "name": "ReLU-312"
+        },
+        {
+            "name": "Conv2d-313",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-314"
+        },
+        {
+            "name": "BatchNorm2d-315"
+        },
+        {
+            "name": "ReLU-316"
+        },
+        {
+            "name": "Conv2d-317",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-318"
+        },
+        {
+            "name": "ReLU-319"
+        },
+        {
+            "name": "Conv2d-320",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-321"
+        },
+        {
+            "name": "BatchNorm2d-322"
+        },
+        {
+            "name": "ReLU-323"
+        },
+        {
+            "name": "Conv2d-324",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-325"
+        },
+        {
+            "name": "ReLU-326"
+        },
+        {
+            "name": "Conv2d-327",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-328"
+        },
+        {
+            "name": "BatchNorm2d-329"
+        },
+        {
+            "name": "ReLU-330"
+        },
+        {
+            "name": "Conv2d-331",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-332"
+        },
+        {
+            "name": "ReLU-333"
+        },
+        {
+            "name": "Conv2d-334",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-335"
+        },
+        {
+            "name": "BatchNorm2d-336"
+        },
+        {
+            "name": "ReLU-337"
+        },
+        {
+            "name": "Conv2d-338",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-339"
+        },
+        {
+            "name": "ReLU-340"
+        },
+        {
+            "name": "Conv2d-341",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-342"
+        },
+        {
+            "name": "BatchNorm2d-343"
+        },
+        {
+            "name": "ReLU-344"
+        },
+        {
+            "name": "Conv2d-345",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-346"
+        },
+        {
+            "name": "ReLU-347"
+        },
+        {
+            "name": "Conv2d-348",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-349"
+        },
+        {
+            "name": "BatchNorm2d-350"
+        },
+        {
+            "name": "ReLU-351"
+        },
+        {
+            "name": "Conv2d-352",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-353"
+        },
+        {
+            "name": "ReLU-354"
+        },
+        {
+            "name": "Conv2d-355",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-356"
+        },
+        {
+            "name": "BatchNorm2d-357"
+        },
+        {
+            "name": "ReLU-358"
+        },
+        {
+            "name": "Conv2d-359",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-360"
+        },
+        {
+            "name": "ReLU-361"
+        },
+        {
+            "name": "Conv2d-362",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-363"
+        },
+        {
+            "name": "BatchNorm2d-364"
+        },
+        {
+            "name": "ReLU-365"
+        },
+        {
+            "name": "Conv2d-366",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-367"
+        },
+        {
+            "name": "ReLU-368"
+        },
+        {
+            "name": "Conv2d-369",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-370"
+        },
+        {
+            "name": "BatchNorm2d-371"
+        },
+        {
+            "name": "ReLU-372"
+        },
+        {
+            "name": "Conv2d-373",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-374"
+        },
+        {
+            "name": "ReLU-375"
+        },
+        {
+            "name": "Conv2d-376",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-377"
+        },
+        {
+            "name": "BatchNorm2d-378"
+        },
+        {
+            "name": "ReLU-379"
+        },
+        {
+            "name": "Conv2d-380",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-381"
+        },
+        {
+            "name": "ReLU-382"
+        },
+        {
+            "name": "Conv2d-383",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-384"
+        },
+        {
+            "name": "BatchNorm2d-385"
+        },
+        {
+            "name": "ReLU-386"
+        },
+        {
+            "name": "Conv2d-387",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-388"
+        },
+        {
+            "name": "ReLU-389"
+        },
+        {
+            "name": "Conv2d-390",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-391"
+        },
+        {
+            "name": "BatchNorm2d-392"
+        },
+        {
+            "name": "ReLU-393"
+        },
+        {
+            "name": "Conv2d-394",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-395"
+        },
+        {
+            "name": "ReLU-396"
+        },
+        {
+            "name": "Conv2d-397",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-398"
+        },
+        {
+            "name": "BatchNorm2d-399"
+        },
+        {
+            "name": "ReLU-400"
+        },
+        {
+            "name": "Conv2d-401",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-402"
+        },
+        {
+            "name": "ReLU-403"
+        },
+        {
+            "name": "Conv2d-404",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-405"
+        },
+        {
+            "name": "BatchNorm2d-406"
+        },
+        {
+            "name": "ReLU-407"
+        },
+        {
+            "name": "Conv2d-408",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-409"
+        },
+        {
+            "name": "ReLU-410"
+        },
+        {
+            "name": "Conv2d-411",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-412"
+        },
+        {
+            "name": "BatchNorm2d-413"
+        },
+        {
+            "name": "ReLU-414"
+        },
+        {
+            "name": "Conv2d-415",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-416"
+        },
+        {
+            "name": "ReLU-417"
+        },
+        {
+            "name": "Conv2d-418",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-419"
+        },
+        {
+            "name": "BatchNorm2d-420"
+        },
+        {
+            "name": "ReLU-421"
+        },
+        {
+            "name": "Conv2d-422",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-423"
+        },
+        {
+            "name": "ReLU-424"
+        },
+        {
+            "name": "Conv2d-425",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-426"
+        },
+        {
+            "name": "BatchNorm2d-427"
+        },
+        {
+            "name": "ReLU-428"
+        },
+        {
+            "name": "Conv2d-429",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-430"
+        },
+        {
+            "name": "ReLU-431"
+        },
+        {
+            "name": "Conv2d-432",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-433"
+        },
+        {
+            "name": "BatchNorm2d-434"
+        },
+        {
+            "name": "ReLU-435"
+        },
+        {
+            "name": "Conv2d-436",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-437"
+        },
+        {
+            "name": "ReLU-438"
+        },
+        {
+            "name": "Conv2d-439",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-440"
+        },
+        {
+            "name": "BatchNorm2d-441"
+        },
+        {
+            "name": "ReLU-442"
+        },
+        {
+            "name": "Conv2d-443",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-444"
+        },
+        {
+            "name": "ReLU-445"
+        },
+        {
+            "name": "Conv2d-446",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-447"
+        },
+        {
+            "name": "BatchNorm2d-448"
+        },
+        {
+            "name": "ReLU-449"
+        },
+        {
+            "name": "Conv2d-450",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-451"
+        },
+        {
+            "name": "ReLU-452"
+        },
+        {
+            "name": "Conv2d-453",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-454"
+        },
+        {
+            "name": "BatchNorm2d-455"
+        },
+        {
+            "name": "ReLU-456"
+        },
+        {
+            "name": "Conv2d-457",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-458"
+        },
+        {
+            "name": "ReLU-459"
+        },
+        {
+            "name": "Conv2d-460",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-461"
+        },
+        {
+            "name": "BatchNorm2d-462"
+        },
+        {
+            "name": "ReLU-463"
+        },
+        {
+            "name": "Conv2d-464",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-465"
+        },
+        {
+            "name": "ReLU-466"
+        },
+        {
+            "name": "Conv2d-467",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-468"
+        },
+        {
+            "name": "BatchNorm2d-469"
+        },
+        {
+            "name": "ReLU-470"
+        },
+        {
+            "name": "Conv2d-471",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-472"
+        },
+        {
+            "name": "ReLU-473"
+        },
+        {
+            "name": "Conv2d-474",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-475"
+        },
+        {
+            "name": "_DenseBlock-476"
+        },
+        {
+            "name": "BatchNorm2d-477"
+        },
+        {
+            "name": "ReLU-478"
+        },
+        {
+            "name": "Conv2d-479",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "AvgPool2d-480",
+            "kernel size": 2,
+            "stride": 2
+        },
+        {
+            "name": "BatchNorm2d-481"
+        },
+        {
+            "name": "ReLU-482"
+        },
+        {
+            "name": "Conv2d-483",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-484"
+        },
+        {
+            "name": "ReLU-485"
+        },
+        {
+            "name": "Conv2d-486",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-487"
+        },
+        {
+            "name": "BatchNorm2d-488"
+        },
+        {
+            "name": "ReLU-489"
+        },
+        {
+            "name": "Conv2d-490",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-491"
+        },
+        {
+            "name": "ReLU-492"
+        },
+        {
+            "name": "Conv2d-493",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-494"
+        },
+        {
+            "name": "BatchNorm2d-495"
+        },
+        {
+            "name": "ReLU-496"
+        },
+        {
+            "name": "Conv2d-497",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-498"
+        },
+        {
+            "name": "ReLU-499"
+        },
+        {
+            "name": "Conv2d-500",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-501"
+        },
+        {
+            "name": "BatchNorm2d-502"
+        },
+        {
+            "name": "ReLU-503"
+        },
+        {
+            "name": "Conv2d-504",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-505"
+        },
+        {
+            "name": "ReLU-506"
+        },
+        {
+            "name": "Conv2d-507",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-508"
+        },
+        {
+            "name": "BatchNorm2d-509"
+        },
+        {
+            "name": "ReLU-510"
+        },
+        {
+            "name": "Conv2d-511",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-512"
+        },
+        {
+            "name": "ReLU-513"
+        },
+        {
+            "name": "Conv2d-514",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-515"
+        },
+        {
+            "name": "BatchNorm2d-516"
+        },
+        {
+            "name": "ReLU-517"
+        },
+        {
+            "name": "Conv2d-518",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-519"
+        },
+        {
+            "name": "ReLU-520"
+        },
+        {
+            "name": "Conv2d-521",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-522"
+        },
+        {
+            "name": "BatchNorm2d-523"
+        },
+        {
+            "name": "ReLU-524"
+        },
+        {
+            "name": "Conv2d-525",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-526"
+        },
+        {
+            "name": "ReLU-527"
+        },
+        {
+            "name": "Conv2d-528",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-529"
+        },
+        {
+            "name": "BatchNorm2d-530"
+        },
+        {
+            "name": "ReLU-531"
+        },
+        {
+            "name": "Conv2d-532",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-533"
+        },
+        {
+            "name": "ReLU-534"
+        },
+        {
+            "name": "Conv2d-535",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-536"
+        },
+        {
+            "name": "BatchNorm2d-537"
+        },
+        {
+            "name": "ReLU-538"
+        },
+        {
+            "name": "Conv2d-539",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-540"
+        },
+        {
+            "name": "ReLU-541"
+        },
+        {
+            "name": "Conv2d-542",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-543"
+        },
+        {
+            "name": "BatchNorm2d-544"
+        },
+        {
+            "name": "ReLU-545"
+        },
+        {
+            "name": "Conv2d-546",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-547"
+        },
+        {
+            "name": "ReLU-548"
+        },
+        {
+            "name": "Conv2d-549",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-550"
+        },
+        {
+            "name": "BatchNorm2d-551"
+        },
+        {
+            "name": "ReLU-552"
+        },
+        {
+            "name": "Conv2d-553",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-554"
+        },
+        {
+            "name": "ReLU-555"
+        },
+        {
+            "name": "Conv2d-556",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-557"
+        },
+        {
+            "name": "BatchNorm2d-558"
+        },
+        {
+            "name": "ReLU-559"
+        },
+        {
+            "name": "Conv2d-560",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-561"
+        },
+        {
+            "name": "ReLU-562"
+        },
+        {
+            "name": "Conv2d-563",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-564"
+        },
+        {
+            "name": "BatchNorm2d-565"
+        },
+        {
+            "name": "ReLU-566"
+        },
+        {
+            "name": "Conv2d-567",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-568"
+        },
+        {
+            "name": "ReLU-569"
+        },
+        {
+            "name": "Conv2d-570",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-571"
+        },
+        {
+            "name": "BatchNorm2d-572"
+        },
+        {
+            "name": "ReLU-573"
+        },
+        {
+            "name": "Conv2d-574",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-575"
+        },
+        {
+            "name": "ReLU-576"
+        },
+        {
+            "name": "Conv2d-577",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-578"
+        },
+        {
+            "name": "BatchNorm2d-579"
+        },
+        {
+            "name": "ReLU-580"
+        },
+        {
+            "name": "Conv2d-581",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-582"
+        },
+        {
+            "name": "ReLU-583"
+        },
+        {
+            "name": "Conv2d-584",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-585"
+        },
+        {
+            "name": "BatchNorm2d-586"
+        },
+        {
+            "name": "ReLU-587"
+        },
+        {
+            "name": "Conv2d-588",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-589"
+        },
+        {
+            "name": "ReLU-590"
+        },
+        {
+            "name": "Conv2d-591",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-592"
+        },
+        {
+            "name": "BatchNorm2d-593"
+        },
+        {
+            "name": "ReLU-594"
+        },
+        {
+            "name": "Conv2d-595",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-596"
+        },
+        {
+            "name": "ReLU-597"
+        },
+        {
+            "name": "Conv2d-598",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-599"
+        },
+        {
+            "name": "BatchNorm2d-600"
+        },
+        {
+            "name": "ReLU-601"
+        },
+        {
+            "name": "Conv2d-602",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-603"
+        },
+        {
+            "name": "ReLU-604"
+        },
+        {
+            "name": "Conv2d-605",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-606"
+        },
+        {
+            "name": "BatchNorm2d-607"
+        },
+        {
+            "name": "ReLU-608"
+        },
+        {
+            "name": "Conv2d-609",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-610"
+        },
+        {
+            "name": "ReLU-611"
+        },
+        {
+            "name": "Conv2d-612",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-613"
+        },
+        {
+            "name": "BatchNorm2d-614"
+        },
+        {
+            "name": "ReLU-615"
+        },
+        {
+            "name": "Conv2d-616",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-617"
+        },
+        {
+            "name": "ReLU-618"
+        },
+        {
+            "name": "Conv2d-619",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-620"
+        },
+        {
+            "name": "BatchNorm2d-621"
+        },
+        {
+            "name": "ReLU-622"
+        },
+        {
+            "name": "Conv2d-623",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-624"
+        },
+        {
+            "name": "ReLU-625"
+        },
+        {
+            "name": "Conv2d-626",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-627"
+        },
+        {
+            "name": "BatchNorm2d-628"
+        },
+        {
+            "name": "ReLU-629"
+        },
+        {
+            "name": "Conv2d-630",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-631"
+        },
+        {
+            "name": "ReLU-632"
+        },
+        {
+            "name": "Conv2d-633",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-634"
+        },
+        {
+            "name": "BatchNorm2d-635"
+        },
+        {
+            "name": "ReLU-636"
+        },
+        {
+            "name": "Conv2d-637",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-638"
+        },
+        {
+            "name": "ReLU-639"
+        },
+        {
+            "name": "Conv2d-640",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-641"
+        },
+        {
+            "name": "BatchNorm2d-642"
+        },
+        {
+            "name": "ReLU-643"
+        },
+        {
+            "name": "Conv2d-644",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-645"
+        },
+        {
+            "name": "ReLU-646"
+        },
+        {
+            "name": "Conv2d-647",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-648"
+        },
+        {
+            "name": "BatchNorm2d-649"
+        },
+        {
+            "name": "ReLU-650"
+        },
+        {
+            "name": "Conv2d-651",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-652"
+        },
+        {
+            "name": "ReLU-653"
+        },
+        {
+            "name": "Conv2d-654",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-655"
+        },
+        {
+            "name": "BatchNorm2d-656"
+        },
+        {
+            "name": "ReLU-657"
+        },
+        {
+            "name": "Conv2d-658",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-659"
+        },
+        {
+            "name": "ReLU-660"
+        },
+        {
+            "name": "Conv2d-661",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-662"
+        },
+        {
+            "name": "BatchNorm2d-663"
+        },
+        {
+            "name": "ReLU-664"
+        },
+        {
+            "name": "Conv2d-665",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-666"
+        },
+        {
+            "name": "ReLU-667"
+        },
+        {
+            "name": "Conv2d-668",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-669"
+        },
+        {
+            "name": "BatchNorm2d-670"
+        },
+        {
+            "name": "ReLU-671"
+        },
+        {
+            "name": "Conv2d-672",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-673"
+        },
+        {
+            "name": "ReLU-674"
+        },
+        {
+            "name": "Conv2d-675",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-676"
+        },
+        {
+            "name": "BatchNorm2d-677"
+        },
+        {
+            "name": "ReLU-678"
+        },
+        {
+            "name": "Conv2d-679",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-680"
+        },
+        {
+            "name": "ReLU-681"
+        },
+        {
+            "name": "Conv2d-682",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-683"
+        },
+        {
+            "name": "BatchNorm2d-684"
+        },
+        {
+            "name": "ReLU-685"
+        },
+        {
+            "name": "Conv2d-686",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-687"
+        },
+        {
+            "name": "ReLU-688"
+        },
+        {
+            "name": "Conv2d-689",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-690"
+        },
+        {
+            "name": "BatchNorm2d-691"
+        },
+        {
+            "name": "ReLU-692"
+        },
+        {
+            "name": "Conv2d-693",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-694"
+        },
+        {
+            "name": "ReLU-695"
+        },
+        {
+            "name": "Conv2d-696",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-697"
+        },
+        {
+            "name": "BatchNorm2d-698"
+        },
+        {
+            "name": "ReLU-699"
+        },
+        {
+            "name": "Conv2d-700",
+            "kernel size": [
+                1,
+                1
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "BatchNorm2d-701"
+        },
+        {
+            "name": "ReLU-702"
+        },
+        {
+            "name": "Conv2d-703",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "_DenseLayer-704"
+        },
+        {
+            "name": "_DenseBlock-705"
+        },
+        {
+            "name": "BatchNorm2d-706"
+        },
+        {
+            "name": "Linear-707"
+        },
+        {
+            "name": "DenseNet-708"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "model": "alexnet",
+    "function params": {},
+    "train accuracy": 99.008,
+    "test accuracy": 86.13,
+    "accuracy difference": 12.878,
+    "num epochs": 66,
+    "num layers": 20,
+    "layers": [
+        {
+            "name": "Conv2d-1",
+            "kernel size": [
+                11,
+                11
+            ],
+            "stride": [
+                4,
+                4
+            ]
+        },
+        {
+            "name": "ReLU-2"
+        },
+        {
+            "name": "MaxPool2d-3",
+            "kernel size": 3,
+            "stride": 2
+        },
+        {
+            "name": "Conv2d-4",
+            "kernel size": [
+                5,
+                5
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-5"
+        },
+        {
+            "name": "Conv2d-6",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-7"
+        },
+        {
+            "name": "Conv2d-8",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-9"
+        },
+        {
+            "name": "Conv2d-10",
+            "kernel size": [
+                3,
+                3
+            ],
+            "stride": [
+                1,
+                1
+            ]
+        },
+        {
+            "name": "ReLU-11"
+        },
+        {
+            "name": "AdaptiveAvgPool2d-12"
+        },
+        {
+            "name": "Dropout-13"
+        },
+        {
+            "name": "Linear-14"
+        },
+        {
+            "name": "ReLU-15"
+        },
+        {
+            "name": "Dropout-16"
+        },
+        {
+            "name": "Linear-17"
+        },
+        {
+            "name": "ReLU-18"
+        },
+        {
+            "name": "Linear-19"
+        },
+        {
+            "name": "AlexNet-20"
+        }
+    ],
+    "num params": 57029322
+}

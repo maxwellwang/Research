@@ -71,6 +71,8 @@ class GoogLeNet(nn.Module):
             blocks: Optional[List[Callable[..., nn.Module]]] = None
     ) -> None:
         super(GoogLeNet, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
         self.function_params = None
         if blocks is None:
             blocks = [BasicConv2d, Inception, InceptionAux]
@@ -87,7 +89,7 @@ class GoogLeNet(nn.Module):
         self.aux_logits = aux_logits
         self.transform_input = transform_input
 
-        self.conv1 = conv_block(1 if dataset == 'MNIST' else 3, 64, kernel_size=7, stride=2, padding=3)
+        self.conv1 = conv_block(1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3, 64, kernel_size=7, stride=2, padding=3)
         self.maxpool1 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
         self.conv2 = conv_block(64, 64, kernel_size=1)
         self.conv3 = conv_block(64, 192, kernel_size=3, padding=1)

@@ -104,6 +104,8 @@ class ShuffleNetV2(nn.Module):
             inverted_residual: Callable[..., nn.Module] = InvertedResidual
     ) -> None:
         super(ShuffleNetV2, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
         self.function_params = {"stages repeats": stages_repeats, "stages out channels": stages_out_channels}
         if len(stages_repeats) != 3:
             raise ValueError('expected stages_repeats as list of 3 positive ints')
@@ -111,7 +113,7 @@ class ShuffleNetV2(nn.Module):
             raise ValueError('expected stages_out_channels as list of 5 positive ints')
         self._stage_out_channels = stages_out_channels
 
-        input_channels = 1 if dataset == 'MNIST' else 3
+        input_channels = 1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3
         output_channels = self._stage_out_channels[0]
         self.conv1 = nn.Sequential(
             nn.Conv2d(input_channels, output_channels, 3, 2, 1, bias=False),

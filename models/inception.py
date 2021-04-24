@@ -67,6 +67,8 @@ class Inception3(nn.Module):
             init_weights: Optional[bool] = True
     ) -> None:
         super(Inception3, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
         self.function_params = None
         if inception_blocks is None:
             inception_blocks = [
@@ -89,7 +91,7 @@ class Inception3(nn.Module):
 
         self.aux_logits = aux_logits
         self.transform_input = transform_input
-        self.Conv2d_1a_3x3 = conv_block(1 if dataset == 'MNIST' else 3, 32, kernel_size=3, stride=2)
+        self.Conv2d_1a_3x3 = conv_block(1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3, 32, kernel_size=3, stride=2)
         self.Conv2d_2a_3x3 = conv_block(32, 32, kernel_size=3)
         self.Conv2d_2b_3x3 = conv_block(32, 64, kernel_size=3, padding=1)
         self.maxpool1 = nn.MaxPool2d(kernel_size=3, stride=2)

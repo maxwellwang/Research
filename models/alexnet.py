@@ -14,9 +14,11 @@ class AlexNet(nn.Module):
 
     def __init__(self, dataset, num_classes: int = 10) -> None:
         super(AlexNet, self).__init__()
+        if dataset == 'GTSRB':
+            num_classes = 43
         self.function_params = None
         self.features = nn.Sequential(
-            nn.Conv2d(1 if dataset == 'MNIST' else 3, 64, kernel_size=11, stride=4, padding=2),
+            nn.Conv2d(1 if dataset == 'MNIST' or dataset == 'FMNIST' else 3, 64, kernel_size=11, stride=4, padding=2),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=3, stride=2),
             nn.Conv2d(64, 192, kernel_size=5, padding=2),
